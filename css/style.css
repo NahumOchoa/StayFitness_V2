@@ -72,11 +72,11 @@ body {
 }
 
 .login input[type="submit"]:hover {
-  background: #17c;
+  background: #E4B3C4;
 }
 
 /* Buttons' focus effect */
 .login input[type="submit"]:focus {
-  border-color: #05a;
+  border-color: #E4B3C4;
 }
   
