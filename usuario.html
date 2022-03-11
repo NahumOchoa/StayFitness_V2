@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-usuario.css">
+    <link rel="stylesheet" href="css/calendario.css">
+    <title>StayFitness</title>
+</head>
+
+<body>
+
+<!--Sección de menu-->
+    <nav>
+        <img src="img/StayFitness.png">
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#ejercicios">EJERCICIOS</a></li>
+            <a href=""><input type="image" src="img/menu_icon.png" value="boton"></a>
+        </ul>
+    </nav>    
+
+<!--Banner con datos personales-->
+    <header class="banner">
+        <div class="nombre">
+            <h1>STAYFITNESS</h1>
+        </div>    
+    </header>
+
+
+<!--Contenido de Desarrollo de Pagina-->
+<div class="calendario">
+<div id="container">
+    <div id="header">
+      <div id="monthDisplay"></div>
+      <div>
+        <button id="backButton">Anterior</button>
+        <button id="nextButton">Siguiente</button>
+      </div>
+    </div>
+
+    <div id="weekdays">
+      <div>Domingo</div>
+      <div>Lunes</div>
+      <div>Martes</div>
+      <div>Miércoles</div>
+      <div>Jueves</div>
+      <div>Viernes</div>
+      <div>Sábado</div>
+    </div>
+
+    <div id="calendar"></div>
+  </div>
+
+  <div id="newEventModal">
+    <h2>Ejercicio realizado</h2>
+
+    <input id="eventTitleInput" placeholder="Ejercicio realizado" />
+
+    <button id="saveButton">Guardar</button>
+    <button id="cancelButton">Cancelar</button>
+  </div>
+
+  <div id="deleteEventModal">
+    <h2>Ejercicio</h2>
+
+    <p id="eventText"></p>
+
+    <button id="deleteButton">Eliminar</button>
+    <button id="closeButton">Cerrar</button>
+  </div>
+
+  <div id="modalBackDrop"></div>
+
+  <script src="js/script.js"></script>
+</div>
+<!--Sección de pie de página-->
+    <footer id="contacto">
+        <img src="img/LogoStayFitness.png">
+        <a href="ayuda.html"><h3 class="ayuda">AYUDA</h3></a>
+        <h3>REDES SOCIALES</h3>
+        <ul class="redes">
+            <li><a href="https://www.instagram.com/stayfitness4/?hl=es-la" target="_blank"><img src="img/redes-sociales/instagram.png" alt=""></a></li>
+            <li><a href="https://vm.tiktok.com/ZTdU2C36b/" target="_blank"><img src="img/redes-sociales/tiktok.png" alt=""></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

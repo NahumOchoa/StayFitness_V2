@@ -1,0 +1,280 @@
+* {font-family: Century Gothic, sans-serif;}
+
+body {
+    text-align: justify;
+}
+
+
+/*Banner*/
+.banner {
+    display:inline-flex;
+    background-image: url(../img/disco.jpg);
+    margin-top: 65px;
+    width: 101%;
+    margin-left: -10px;
+}
+
+.banner div{
+    margin-left: 100px;
+}
+
+.banner input{
+    float: right;
+    margin-top: 20px;
+}
+
+.banner input:hover{
+    width: 40px;
+}
+
+.nombre {
+    margin-left: 3%;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.descripcion {
+    width: 100%;
+    color: #000000;
+    font-size: 20px;
+}
+
+
+
+
+
+/*Menu*/
+nav {
+    background-color: #94d3f0;
+    padding: 3px;
+    position: absolute;
+    width: 100%;
+    margin-top: -9px;
+    margin-left: -10px;
+}
+
+nav img{
+    float: left;
+    width: 7%;
+    margin-left: 3%;
+}
+
+.menu, .redes {
+    list-style: none;
+    margin-left: 10%;
+}
+
+.menu li {
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 3%;
+    margin-left: 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color: #1C0C5B;
+    font-size: 19px;
+}
+
+.menu input{
+    float: right;
+    margin-right: 5%;
+}
+
+.menu input:hover{
+    width: 38px;
+}
+
+
+
+
+
+/* Contenido*/
+body{
+    background-color: rgb(255, 255, 255);;
+}
+
+article{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-top: 2%;
+}
+article section{
+    margin-top: 20px;
+}
+
+article p{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+#servicios{
+    padding: 2% 5% .1% 5%;
+    margin-top: 5%;
+}
+
+.titulo_section{
+    font-size: 23px;
+    color: #000000;
+    text-align: center;
+}
+
+.subtitulo_section{
+    color: #000000;
+    font-size: 18px;
+}
+
+.iconos, .iconos2{
+    text-align: center;
+    display: inline-block;
+    margin-right: 30px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 1px 2px 2px 3px rgb(124, 120, 120);
+    margin-left: 50px;
+    width: 200px;
+}
+
+.iconos2 img{
+    width: 100px;
+    margin-top: 11%;
+}
+
+.iconos img{
+    margin-top: 1%;
+    width: 100px;
+}
+
+.iconos, .iconos2 h4{
+    font-size: 18px;
+}
+
+.image {
+    margin-top: 10%;
+    position:relative;
+}
+
+.image img {
+    width: 99%;
+    height: 600px;
+}
+
+.image h2 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.image a {
+    position: absolute;
+    top: 220px;
+    width: 10%;
+    height: 6%;
+    left: 0;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10%;
+    margin-left: 45%;
+    color: #d649a0;
+    padding: 10px 5px 5px 5px;
+    text-decoration: none;
+    border: 3px solid #d649a0;
+}
+
+.image a:hover{
+    background-color: beige;
+}
+
+#about{
+    padding: 5% 5% 5% 5%;
+    margin-top: 10%;
+}
+#about p{
+    margin-right: 20%;
+}
+
+#about img{
+    float: right;
+    width: 140px;
+    margin-top: -20%;
+}
+
+#ejercicios{
+    margin-top: 10%;
+}
+
+#ejercicios img{
+    width: 100%;
+
+}
+.ejer h2{
+    text-align: center;
+}
+
+.ejer{
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 320px;
+}
+
+
+
+
+/* Pie de pagina*/
+footer{
+    background-color: #2e2d2d;
+    padding: 2%;
+    margin-top: 30px;
+    
+}
+
+footer img{
+    float: left;
+    width: 5%;
+}
+
+footer h3{
+    margin-top: -1%;
+    margin-left: 30%;
+    color: #ffffff;
+    display: inline-block;
+}
+
+footer h3 .ayuda{
+    margin-top: -1%;
+    text-align: left;
+    margin-left: 20%;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.redes{
+    text-align: right;
+    margin-right: 19%;
+}
+.redes li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes li img{
+    width: 100%;
+}
+
+.redes li img:hover{
+    width: 105%;
+}
