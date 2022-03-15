@@ -13,17 +13,15 @@
         <img src="img/StayFitness.png">
         <ul class="menu">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="index.html #about">ABOUT US</a></li>
-            <li><a href="index.html #ejercicios">EJERCICIOS</a></li>
         </ul>
     </nav>  
 
   <div class="login">
     
       <h2 class="login-header">Bienvenido a StayFitness</h2>
-      <form class="login-container">
-      <p><input type="email" placeholder="Email"></p>
-      <p><input type="password" placeholder="Contraseña"></p>
+      <form action="php/iniciar-sesion.php" method="POST" class="login-container">
+      <p><input type="email" name="email" placeholder="Email"></p>
+      <p><input type="password" name="contraseña" placeholder="Contraseña"></p>
       <p><input type="submit" value="Iniciar Sesión"></p>
       <p>¿No cuentas con una cuenta?<a href="registro.html"> Registrate</a></p>
     </form>
