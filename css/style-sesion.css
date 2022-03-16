@@ -2,7 +2,7 @@
 
 body {
     /*background: rgb(247, 214, 242);*/
-    background: url(../img/fondo.jpg);
+    background: url(../img/fondo1.jpg);
     background-repeat: no-repeat;
     min-height: 700px;
     display: flex;
@@ -59,7 +59,6 @@ body {
     font-size: 0.95em;
   }
   
-  .login input[type="email"],
   .login input[type="contraseña"] {
     background: #fff;
     border-color: #bbb;

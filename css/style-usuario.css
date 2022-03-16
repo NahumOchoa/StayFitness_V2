@@ -59,42 +59,40 @@ nav img{
     margin-left: 3%;
 }
 
-.menu, .redes {
+.redes {
     list-style: none;
     margin-left: 10%;
 }
 
-.menu li {
-    display: inline-block;
-    margin-top: 8px;
-    margin-right: 3%;
-    margin-left: 30px;
-}
-
-.menu li a {
-    text-decoration: none;
+ul{
+    list-style: none;
+  }
+  #menu li>a{
     color: rgb(0, 0, 0);
+    padding: 10px;
     display: block;
+    text-decoration: none;
+    min-width: 100px;
     font-size: 18px;
-}
-
-.menu li a:hover {
+    margin-left: 30px;
+  }
+  #menu li>a:hover{
     color: #1C0C5B;
     font-size: 19px;
-}
-
-.menu input{
-    float: right;
-    margin-right: 5%;
-}
-
-.menu input:hover{
-    width: 38px;
-}
-
-
-
-
+  }
+  #menu>li{
+    float: left;
+    text-align:center
+  }
+  #menu>li>ul{
+    display: none;  }
+  #menu>li:hover>ul {
+    display:contents;
+  }
+  #menu>li>ul>li{
+      text-align: justify;
+      position: relative;
+  }
 
 /* Contenido*/
 body{
