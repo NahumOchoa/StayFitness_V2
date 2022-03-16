@@ -12,14 +12,19 @@
 <body>
 
 <!--Sección de menu-->
-    <nav>
-        <img src="img/StayFitness.png">
-        <ul class="menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#ejercicios">EJERCICIOS</a></li>
-            <a href=""><input type="image" src="img/menu_icon.png" value="boton"></a>
-        </ul>
-    </nav>    
+  <nav>
+    <img src="img/StayFitness.png">
+    <ul id="menu">
+      <li><a href="">HOME</a></li>
+      <li><a href="">EJERCICIOS</a></li>
+      <li><a href="">MENU</a>
+        <ul>
+          <li><a href="">Perfil</a></li>
+          <li><a href="php/cerrar-sesion.php">Cerrar Sesión</a></li>
+        </ul>  
+      </li>
+    </ul>
+  </nav>    
 
 <!--Banner con datos personales-->
     <header class="banner">
@@ -27,6 +32,15 @@
             <h1>STAYFITNESS</h1>
         </div>    
     </header>
+
+<div class="imc">
+    <h2 class="login-header">Calcula tu IMC (indice de masa corporal)</h2>
+      <form class="login-container">
+      <p><input type="number" placeholder="Peso en kg"></p>
+      <p><input type="number" placeholder="Estatura en cm"></p>
+      <p><input type="submit" value="Calcular"></p>
+    </form>
+</div>
 
 
 <!--Contenido de Desarrollo de Pagina-->
@@ -75,6 +89,25 @@
 
   <script src="./script.js"></script>
 </div>
+
+<!--Registro de cambios de IMC-->
+<table class="default">
+
+  <tr>
+    <td>IMC Anterior</td>
+    <td>IMC Actual</td>
+    <td>Peso Anterior</td>
+    <td>Peso Actual</td>
+  </tr>
+  <tr>
+    <td><input id="imc" placeholder="IMC" /></td>
+    <td><input id="imc" placeholder="IMC" /></td>
+    <td><input id="peso" placeholder="Peso kg" /></td>
+    <td><input id="peso" placeholder="Peso kg" /></td>
+  </tr>
+
+</table>
+
 <!--Sección de pie de página-->
     <footer id="contacto">
         <img src="img/LogoStayFitness.png">
