@@ -21,7 +21,7 @@ session_destroy();
 echo "
 		<script>
             alert('Sesión Cerrada');
-            location.href='../Index.html';
+            location.href='../index.html';
     	</script>
 		 "; 
 ?>
