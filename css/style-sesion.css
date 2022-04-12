@@ -27,17 +27,17 @@ body {
   
   
   .login-header {
-    background: rgb(152, 187, 216);
+    background: #b0b8e8 ;
     padding: 20px;
     font-size: 1.4em;
     font-weight: normal;
     text-align: center;
-    color: #fff;
+    color: #000;
     margin-top: 100px;
   }
   
   .login-container {
-    background: rgb(152, 187, 216);
+    background: #b0b8e8 ;
     height: 450px;
     padding: 12px;
   }
@@ -72,23 +72,23 @@ body {
   }
   
   .login input[type="submit"] {
-    background: rgb(231, 140, 36);
+    background: #0c1c34 ;
     border-color: transparent;
     color: #fff;
     cursor: pointer;
   }
   
   .login input[type="submit"]:hover {
-    background: rgb(224, 181, 124);
+    background: #576796;
   }
   
   /* Buttons' focus effect */
   .login input[type="submit"]:focus {
-    border-color: rgb(226, 145, 53);
+    border-color: #576796;
   }
 
   nav {
-    background-color: #94d3f0;
+    background-color: #0c1c34;
     padding: 3px;
     position: absolute;
     width: 100%;
@@ -116,14 +116,13 @@ nav img{
 
 .menu li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     display: block;
     font-size: 18px;
 }
 
 .menu li a:hover {
-    color: #1C0C5B;
-    font-size: 19px;
+    color: #ccf4fc;
 }
 
 .menu input{

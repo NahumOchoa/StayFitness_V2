@@ -45,7 +45,8 @@ body {
 
 /*Menu*/
 nav {
-    background-color: #94d3f0;
+    background-color: #0c1c34 ;
+    ;
     padding: 3px;
     position: absolute;
     width: 100%;
@@ -68,7 +69,7 @@ ul{
     list-style: none;
   }
   #menu li>a{
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -76,9 +77,20 @@ ul{
     font-size: 18px;
     margin-left: 30px;
   }
+
+  #w{
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+    font-size: 18px;
+    margin-left: 450px;
+    font-weight: bold;
+  }
+
   #menu li>a:hover{
-    color: #1C0C5B;
-    font-size: 19px;
+    color: #ccf4fc;
   }
   #menu>li{
     float: left;
@@ -93,6 +105,7 @@ ul{
       text-align: justify;
       position: relative;
   }
+
 
 /* Contenido*/
 body{
@@ -234,7 +247,7 @@ article p{
 
 /* Pie de pagina*/
 footer{
-    background-color: #2e2d2d;
+    background-color: #0c1c34;
     padding: 2%;
     margin-top: 30px;
     
@@ -273,6 +286,26 @@ footer h3 .ayuda{
     width: 100%;
 }
 
-.redes li img:hover{
-    width: 105%;
+table {
+    background-color: #b0b8e8;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px 10px 15px 10px;
+    width: 61%;
+    margin-left: 248px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
+
+table caption{
+    background-color: #b0b8e8;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+table td{
+    border-bottom: solid 1px #74747c ;
+}
+
+
