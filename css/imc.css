@@ -1,0 +1,35 @@
+#container-imc {
+    width: 61%;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 247px;
+    background-color:#b0b8e8 ;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 0 15px 0;
+    margin-bottom: 60px;
+}
+
+#container-imc #guardar{
+    width: 170px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #768dd8;
+}
+
+
+#container-imc #peso, #altura, #resultado{
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 0px 2px rgb(59, 59, 59);
+}
+
+.calcular.imc{
+    width: 75%;
+    text-align: center;
+}
