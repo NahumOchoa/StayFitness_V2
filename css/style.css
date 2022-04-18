@@ -2,7 +2,6 @@
 
 body {
     text-align: justify;
-    background-color: #000000;
 }
 
 
@@ -16,7 +15,7 @@ body {
     display:inline-flex;
     background-color: #0c1c34  ;
     margin-top: 65px;
-    width: 101%;
+    width: 102%;
     padding: 3px;
     margin-left: -10px;
 }
@@ -45,9 +44,6 @@ body {
     color: #ffffff;
     font-size: 20px;
 }
-
-
-
 
 
 /*Menu*/
@@ -97,9 +93,6 @@ nav img{
 .menu input:hover{
     width: 38px;
 }
-
-
-
 
 
 /* Contenido*/
@@ -253,8 +246,6 @@ article p{
     width: 320px;
 
 }
-
-
 
 
 /* Pie de pagina*/
