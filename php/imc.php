@@ -6,7 +6,7 @@ $link = mysqli_connect("localhost","root","") or die("<h2>No se encuentra el ser
 mysqli_select_db($link,"bd_fitness") or die("<h2>Error de Conexion</h2>");
 
 
-$nombre = $_SESSION['nombre'];
+      $nombre = $_SESSION['nombre'];
 
  //extraer los datos del usuario que se tiene dentro de la variable sesion
       $consulta = "SELECT * FROM registros WHERE nombre = '$nombre'";
@@ -17,19 +17,20 @@ $nombre = $_SESSION['nombre'];
 	$peso = $_POST['peso'];
 	$resultado = $_POST['resultado'];
       $fecha = date("Y-m-d");
-      $datestop=$_POST['datestop'];
+      $datestop = $_POST['datestop'];
     
       $insertar = "INSERT INTO `registrosimc`(`id`, `altura`, `peso`, `resultado`, `fecha`, `nombre`) VALUES ('?','$altura','$peso','$resultado','$fecha', '$nombre')";
 
       $resul = mysqli_query($link, $insertar);
-  
+      
+      //finalmente, inserta los datos en registrosimc
      if ($resul){
    
         echo "
 		<script>
             alert('Registro Exitoso');
             location.href='usuario.php';
-    	</script>
+    	      </script>
 		 
 		 "; 
                    }

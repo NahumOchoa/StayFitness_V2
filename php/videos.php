@@ -1,4 +1,6 @@
 <?php
+//este archivo solamente es de uso de administador para
+//el insertar los datos en la tabla de videos
 
 //conexion con la base de datos y el servidor
 $link = mysqli_connect("localhost","root","") or die("<h2>No se encuentra el servidor</h2>");

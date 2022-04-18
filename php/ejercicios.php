@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--estilos-->
     <link rel="stylesheet" href="../css/style-usuario.css">
-    <link rel="stylesheet" href="../css/calendar.css">
-    <link rel="stylesheet" href="../css/imc.css">
     <link rel="stylesheet" href="../css/ejercicios.css">
     <link rel="" href="iniciar-sesion.php">
     <title>StayFitness</title>
@@ -28,7 +27,7 @@
     </ul>
   </nav>
 
-<!--Banner con datos personales-->
+<!--Banner con datos de sitio-->
     <header class="banner">
         <div class="nombre">
             <h1>STAYFITNESS</h1>
@@ -37,7 +36,7 @@
 
 
   
-<!--Contenido de Desarrollo de Pagina-->
+<!--Contenido de Desarrollo de seccion de ejercicios-->
 <h2 style="text-align: center;">EJERCICIOS QUE DEBES REALIZAR</h2>
   <div class="layout">
     <div class="accordion">
@@ -289,6 +288,7 @@
     </div>
 </div>
 
+<!--script de funcionamiento de despliegue-->
   <script>
     let answers=document.querySelectorAll(".accordion");
     answers.forEach((event)=>{

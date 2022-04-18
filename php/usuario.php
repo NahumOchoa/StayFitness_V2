@@ -19,6 +19,7 @@ $extraer = $ejecutar->fetch_assoc();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--estilos-->
     <link rel="stylesheet" href="../css/style-usuario.css">
     <link rel="stylesheet" href="../css/calendar.css">
     <link rel="stylesheet" href="../css/imc.css">
@@ -41,13 +42,16 @@ $extraer = $ejecutar->fetch_assoc();
     </ul>
   </nav>
 
-<!--Banner con datos personales-->
+<!--Banner con datos de sitio-->
     <header class="banner">
         <div class="nombre">
             <h1>STAYFITNESS</h1>
         </div>    
     </header>
 
+    <!--Contenido de Desarrollo de Pagina-->
+
+  <!--Calculo IMC y se envian los datos en un form a su tabla de datos-->
   <div class="calcular-imc">
     <div id="container-imc">
       <h2 class="login-header">Calcula tu IMC (índice de masa corporal)</h2>
@@ -73,7 +77,7 @@ $extraer = $ejecutar->fetch_assoc();
 <script src="../js/imc-script.js"></script>
 
 
-<!--Contenido de Desarrollo de Pagina-->
+<!--implementacion del calendario designado para el ingreso de actividades fisicas-->
 <div class="calendario">
 <div id="container">
   <div><h2 align="center">Calendario de actividades físicas</h2></div>
@@ -122,7 +126,7 @@ $extraer = $ejecutar->fetch_assoc();
   <script src="../js/calendar-script.js"></script>
 </div>
 
-<!--Registro de cambios de IMC-->
+<!--Tabla de progreso de IMC-->
 <table id="progreso">
   <caption><h2>Tabla de progreso</h2></caption>
 		<tr>
@@ -133,10 +137,11 @@ $extraer = $ejecutar->fetch_assoc();
 		</tr>
 
 		<?php 
+    //se obtienen los datos requeridos de la tabla
     require_once("conectar.php");
 		$sql= "SELECT * FROM registrosimc WHERE nombre ='".$nombre."'";
 		$result=mysqli_query($link,$sql);
-
+    //se muestran los datos en esta tabla
 		while($mostrar=mysqli_fetch_array($result)){
 		 ?>
 

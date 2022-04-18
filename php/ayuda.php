@@ -19,8 +19,8 @@ $extraer = $ejecutar->fetch_assoc();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--estilos-->
     <link rel="stylesheet" href="../css/style-usuario.css">
-    <link rel="" href="iniciar-sesion.php">
     <link rel="stylesheet" href="../css/preguntas.css">
     <title>StayFitness</title>
 </head>
@@ -40,7 +40,7 @@ $extraer = $ejecutar->fetch_assoc();
     </ul>
   </nav>
 
-<!--Banner con datos personales-->
+<!--Banner con datos de sitio-->
     <header class="banner">
         <div class="nombre">
             <h1>STAYFITNESS</h1>
@@ -48,6 +48,7 @@ $extraer = $ejecutar->fetch_assoc();
     </header>
 
 <!--Contenido de Desarrollo de Pagina-->
+<!--Seccion de preguntas frencuentes-->
 <h2 style="text-align: center;"> PREGUNTAS FRECUENTES</h2>
   <div class="layout">
     <div class="accordion">
@@ -206,6 +207,7 @@ $extraer = $ejecutar->fetch_assoc();
 
   </div>
 
+  <!--script de despliegue de preguntas-->
   <script>
     let answers=document.querySelectorAll(".accordion");
     answers.forEach((event)=>{
