@@ -2,6 +2,7 @@ let nav = 0;
 let clicked = null;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
 
+//declaracion de constantes
 const calendar = document.getElementById('calendar');
 const newEventModal = document.getElementById('newEventModal');
 const deleteEventModal = document.getElementById('deleteEventModal');
@@ -9,9 +10,10 @@ const backDrop = document.getElementById('modalBackDrop');
 const eventTitleInput = document.getElementById('eventTitleInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
+//funcion para abrir un modal
 function openModal(date) {
   clicked = date;
-
+  //evento click que muestre el agregar por medio de eventext
   const eventForDay = events.find(e => e.date === clicked);
 
   if (eventForDay) {
@@ -24,6 +26,7 @@ function openModal(date) {
   backDrop.style.display = 'block';
 }
 
+//cargar los dias, meses, años que mostrara el calendario
 function load() {
   const dt = new Date();
 
@@ -81,6 +84,7 @@ function load() {
   }
 }
 
+//funcion que cierra el evento
 function closeModal() {
   eventTitleInput.classList.remove('error');
   newEventModal.style.display = 'none';
@@ -91,6 +95,7 @@ function closeModal() {
   load();
 }
 
+//funcion que guarda el texto dentro de evento
 function saveEvent() {
   if (eventTitleInput.value) {
     eventTitleInput.classList.remove('error');
@@ -107,12 +112,14 @@ function saveEvent() {
   }
 }
 
+//funcion que elimina el evento creado
 function deleteEvent() {
   events = events.filter(e => e.date !== clicked);
   localStorage.setItem('events', JSON.stringify(events));
   closeModal();
 }
 
+//funcion que maneja el evento de cada boton en el calendario y los modales
 function initButtons() {
   document.getElementById('nextButton').addEventListener('click', () => {
     nav++;
