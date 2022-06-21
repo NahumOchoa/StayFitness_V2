@@ -21,16 +21,15 @@
                 </a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav align-content-center">
-                    <li class="nav-item link-li"><a class="nav-link link-a" href="index.html">INICIO</a></li>
-                    <li class="nav-item link-li"><a class="nav-link link-a" href="#about-us">SOBRE NOSOTROS</a></li>
-                    <li class="nav-item link-li"><a class="nav-link link-a" href="#ejercicios">EJERCICIOS</a></li>
+                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="index.html">INICIO</a></li>
+                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="#about-us">SOBRE NOSOTROS</a></li>
+                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="#ejercicios">EJERCICIOS</a></li>
                 </ul>
             </div>
-            <a class="d-flex flex-grow-2 align-items-center login-link" href="iniciar-sesion.html">
-                <i class="bi bi-box-arrow-in-right login-icon"></i>
-                <span class="mx-2">INICIAR SESIÓN</span>
-                <!--<input type="image" src="img/icon/usuario1.png" value="boton">-->
-            </a>
+            <a class ="btn btn-outline-info" id="btns" href="iniciar-sesion.html">INICIAR SESIÓN</a>
+            <a class ="btn btn-black" id="btns" href="registro.html">REGISTRATE</a>
+   
+            
 
 
 
@@ -40,12 +39,16 @@
 
 <!--Banner con datos de sitio-->
     <header class="banner container-fluid justify-content-center">
-        <!--<img src="img/inicio.png" alt="inicio" class="inicio">-->
-        <div class="text-center">
-            <h1>STAYFITNESS</h1>
-            <p>Acepta los retos para así sentir la autoría de la victoria</p>
-            <!--<a href="iniciar-sesion.html"><input type="image" src="img/icon/flecha1.png" value="boton"></a>-->
-        </div>    
+        <div class="row align-items-center">
+            <div class="col-lg-5 d-flex justify-content-center">
+                <img class="img-fluid" src="img/8225.png" alt="about-us-img">
+            </div>
+            <div class="col-lg-7 text px-3">
+                <h1>STAYFITNESS</h1>
+                <p>Acepta los retos para así sentir la autoría de la victoria</p>
+            </div>
+        </div>
+       
     </header>
 
 
@@ -144,14 +147,11 @@
 </section>
 
 <!--Sección de pie de página-->
-    <footer id="contacto">
-        <img src="img/logostayfitnessblanco.png">
-        <a href="ayuda.html"><h3 class="ayuda">AYUDA</h3></a>
-        <h3>REDES SOCIALES</h3>
-        <ul class="redes">
-            <li><a href="https://www.instagram.com/stayfitness4/?hl=es-la" target="_blank"><img src="img/redes-sociales/instagram.png" alt=""></a></li>
-            <li><a href="https://vm.tiktok.com/ZTdU2C36b/" target="_blank"><img src="img/redes-sociales/tiktok.png" alt=""></a></li>
-        </ul>
+    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 px-3  pt-3">STAYFITNESS. &copy; Todos Los Derechos Reservados 2022</p>
+        
+        <a href="#"><i class="bi bi-instagram"></i></a>  
+        
     </footer>
 </body>
 </html>
