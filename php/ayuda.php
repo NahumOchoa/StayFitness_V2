@@ -31,7 +31,7 @@ $extraer = $ejecutar->fetch_assoc();
   <nav>
     <img src="../img/logostayfitnessblanco.png">
     <ul id="menu">
-      <li><a href="usuario.php">HOME</a></li>
+      <li><a href="usuario.php">INICIO</a></li>
       <li><a href="ejercicios.php">EJERCICIOS</a></li>
       <li><a href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
       <li id="w" href="">BIENVENIDO <?php 
