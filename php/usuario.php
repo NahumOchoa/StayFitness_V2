@@ -42,7 +42,7 @@ $extraer = $ejecutar->fetch_assoc();
                     <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="usario.php">INICIO</a></li>
                     <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="ejercicios.php">EJERCICIOS</a></li>
                     <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
-                    <li class="nav-item link-li" id="w"><a class="nav-link link-a fs-5" href="#">BIENVENIDO<?php 
+                    <li class="nav-item link-li" id="w"><a class="nav-link link-a fs-5" href="#">BIENVENIDO <?php 
                               echo $nombre?></a></li>
                     
                     </li>
@@ -65,111 +65,116 @@ $extraer = $ejecutar->fetch_assoc();
     <!--Contenido de Desarrollo de Pagina-->
 
   <!--Calculo IMC y se envian los datos en un form a su tabla de datos-->
-  <div class="calcular-imc">
-    <div id="container-imc">
-      <div class=" d-flex flex-column justify-content-center align-items-center" id="justificar">
-              <form name = "IMC" action="imc.php"method="POST">
-                  <div class = "text text-center mb-3">
-                      <h1><b>Calcula tu IMC</b><br>(índice de masa corporal)</h1>
-                      <h2>Tu IMC: </h2>
-                      <h3 name="resultado" id="resultado" size="65"></h3>
-                      
-                  </div>
-                  <div class = "login">
-                      <p>Escribe tu PESO actual (kg)</p>
-                      <input type="text" class="form-control bg-gray-main-dark-mode" name="peso" id="peso" size="3" maxlength="3" required="required">
-                      <p>Escribe tu ALTURA actual (cm):</p>
-                      <input type="text" class="form-control" name="altura"value="" id="altura" size="3" maxlength="3" required="required">
-                      <input type="button" class="btn btn-primary" id="guardar" value="Calcular IMC" onclick="calcularIMC();">
-                      <input  class = "btn btn-primary"type="submit" id="guardar" value="Guardar resultados">
-                      
-                  </div>
-              </form>
-       </div>
+  <section class="container justify-content-center mt-5">
+    <div class="calcular-imc">
+      <div id="container-imc">
+        <div class=" d-flex flex-column justify-content-center align-items-center" id="justificar">
+                <form name = "IMC" action="imc.php"method="POST">
+                    <div class = "text text-center mb-3">
+                        <h1><b>Calcula tu IMC</b><br>(índice de masa corporal)</h1>
+                        <h2>Tu IMC: </h2>
+                        <h3 name="resultado" id="resultado" size="65"></h3>
+                        
+                    </div>
+                    <div class = "login">
+                        <p>Escribe tu PESO actual (kg)</p>
+                        <input type="text" class="form-control bg-gray-main-dark-mode" name="peso" id="peso" size="3" maxlength="3" required="required">
+                        <p>Escribe tu ALTURA actual (cm):</p>
+                        <input type="text" class="form-control" name="altura"value="" id="altura" size="3" maxlength="3" required="required">
+                        <input type="button" class="btn btn-primary" id="guardar" value="Calcular IMC" onclick="calcularIMC();">
+                        <input  class = "btn btn-primary"type="submit" id="guardar" value="Guardar resultados">
+                        
+                    </div>
+                </form>
+        </div>
+      </div>
     </div>
-  </div>
-<script src="../js/imc-script.js"></script>
+  <script src="../js/imc-script.js"></script>
 
 
-<!--implementacion del calendario designado para el ingreso de actividades fisicas-->
-<div class="calendario">
-<div id="container">
-  <div><h2 align="center">Calendario de actividades físicas</h2></div>
+  <!--implementacion del calendario designado para el ingreso de actividades fisicas-->
+  <div class="calendario">
+  <div id="container">
+    <div><h1 align="center"><b>Calendario de actividades físicas</b><br></h1></div>
 
-    <div id="header">
-      <div id="monthDisplay"></div>
-      <div>
-        <button id="backButton">Anterior</button>
-        <button id="nextButton">Siguiente</button>
+      <div class = "d-flex flex-row align-items-center" id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button class ="btn btn-primary" id="backButton">Anterior mes</button>
+          <button class ="btn btn-primary" id="nextButton">Siguiente mes</button>
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div>Domingo</div>
+        <div>Lunes</div>
+        <div>Martes</div>
+        <div>Miércoles</div>
+        <div>Jueves</div>
+        <div>Viernes</div>
+        <div>Sábado</div>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+    <div class = "container justify-content-center  id="header">
+      <div id="newEventModal">
+        <h2 align="center"><b>Ejercicio realizado</b></h2>
+        <select class ="combo"name="select" id="eventTitleInput"  placeholder="Ejercicio realizado" autofocus ="Value 2">
+          <option value="Aumento de masa corporal" selected>Aumento de masa corporal</option>
+          <option value="Ejercicios para bajar de peso" >Ejercicios para bajar de peso</option>
+          <option value="Ejercicios para mantenerte">Ejercicios para mantenerte </option>
+          <option value="Cardio">Cardio</option>
+          <option value="Flexibilidad">Flexibilidad</option>
+        </select>
+        <button id="saveButton">Guardar </button>
+        <button id="cancelButton">Cancelar</button>
       </div>
     </div>
 
-    <div id="weekdays">
-      <div>Domingo</div>
-      <div>Lunes</div>
-      <div>Martes</div>
-      <div>Miércoles</div>
-      <div>Jueves</div>
-      <div>Viernes</div>
-      <div>Sábado</div>
+    <div id="deleteEventModal">
+      <h2 align="center"><b>Ejercicio</b></h2>
+
+      <p id="eventText"></p>
+      <button id="deleteButton">Eliminar </button>
+      <button id="closeButton">Cerrar</button>
     </div>
 
-    <div id="calendar"></div>
+    <div id="modalBackDrop"></div>
+
+    <script src="../js/calendar-script.js"></script>
   </div>
 
-  <div id="newEventModal">
-    <h2>Ejercicio realizado</h2>
+  <!--Tabla de progreso de IMC-->
+  <table id="progreso">
+    <caption><h2>Tabla de progreso</h2></caption>
+      <tr>
+        <td><b>Fecha</b></td>
+        <td><b>Altura</b></td>
+        <td><b>Peso</b></td>
+        <td><b>Estado corporal y resultado de IMC</b></td>
+      </tr>
 
-    <input id="eventTitleInput" placeholder="Ejercicio realizado" />
+      <?php 
+      //se obtienen los datos requeridos de la tabla
+      require_once("conectar.php");
+      $sql= "SELECT * FROM registrosimc WHERE nombre ='".$nombre."'";
+      $result=mysqli_query($link,$sql);
+      //se muestran los datos en esta tabla
+      while($mostrar=mysqli_fetch_array($result)){
+      ?>
 
-    <button id="saveButton">Guardar</button>
-    <button id="cancelButton">Cancelar</button>
-  </div>
-
-  <div id="deleteEventModal">
-    <h2>Ejercicio</h2>
-
-    <p id="eventText"></p>
-
-    <button id="deleteButton">Eliminar</button>
-    <button id="closeButton">Cerrar</button>
-  </div>
-
-  <div id="modalBackDrop"></div>
-
-  <script src="../js/calendar-script.js"></script>
-</div>
-
-<!--Tabla de progreso de IMC-->
-<table id="progreso">
-  <caption><h2>Tabla de progreso</h2></caption>
-		<tr>
-      <td><b>Fecha</b></td>
-			<td><b>Altura</b></td>
-			<td><b>Peso</b></td>
-			<td><b>Estado corporal y resultado de IMC</b></td>
-		</tr>
-
-		<?php 
-    //se obtienen los datos requeridos de la tabla
-    require_once("conectar.php");
-		$sql= "SELECT * FROM registrosimc WHERE nombre ='".$nombre."'";
-		$result=mysqli_query($link,$sql);
-    //se muestran los datos en esta tabla
-		while($mostrar=mysqli_fetch_array($result)){
-		 ?>
-
-		<tr>
-      <td><?php echo $mostrar['fecha'] ?></td>
-			<td><?php echo $mostrar['altura'] ?></td>
-			<td><?php echo $mostrar['peso'] ?></td>
-			<td><?php echo $mostrar['resultado'] ?></td> 
-		</tr>
-	<?php 
-	}
-	 ?>
-	</table>
-
+      <tr>
+        <td><?php echo $mostrar['fecha'] ?></td>
+        <td><?php echo $mostrar['altura'] ?></td>
+        <td><?php echo $mostrar['peso'] ?></td>
+        <td><?php echo $mostrar['resultado'] ?></td> 
+      </tr>
+    <?php 
+    }
+    ?>
+    </table>
+  </section>
 <!--Sección de pie de página-->
     <footer id="contacto">
         <img src="../img/logostayfitnessblanco.png">

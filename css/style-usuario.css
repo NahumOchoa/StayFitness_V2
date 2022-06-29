@@ -98,23 +98,94 @@ body{
 }
 #container-imc{
     background-color: #22253D!important;
-    
+    border: 1px solid #6F4EF6!important;
 }
 #container-imc p{
     text-align: left!important;
     margin-top: 10px;
 
 }
+#saveButton{
+    background-color: #6F4EF6!important;
+    border: 1px solid #6F4EF6!important;
+    color: white!important;
+    font-size: 15px!important;
+    padding: 10px!important;
+    margin-top: 10px!important;
+    margin-left: 10px!important;
+}
+#saveButton:hover{
+    background-color: #ffffff!important;
+    color: #6F4EF6!important;
+}
+.combo{
+    color: black !important;
+}
+
+.combo option{
+    color: black !important;
+}
+.day {
+    color: black !important;
+    font-size: 13px;
+    margin-left: 10px;
+}
+.day:hover{
+    color: #6F4EF6!important;
+}
+#cancelButton{
+    background-color: red!important;
+    border: 1px solid red!important;
+    color: white!important;
+    font-size: 15px!important;
+    padding: 10px!important;
+    margin-top: 10px!important;
+    margin-left: 10px!important;
+}
+#cancelButton:hover{
+    background-color: #ffffff!important;
+    color: red!important;
+}
+#closeButton{
+    background-color: #6F4EF6!important;
+    border: 1px solid #6F4EF6!important;
+    color: white!important;
+    align-items: center;
+    font-size: 15px!important;
+    padding: 10px!important;
+    margin-top: 10px!important;
+    margin-left: 10px!important;
+}
+#closeButton:hover{
+    background-color: #ffffff!important;
+    color: #6F4EF6!important;
+}
+#deleteButton{
+    background-color: red!important;
+    border: 1px solid red!important;
+    align-items: center;
+    color: white!important;
+    font-size: 15px!important;
+    padding: 10px!important;
+    margin-top: 10px!important;
+    margin-left: 10px!important;
+}
+#deleteButton:hover{
+    background-color: #ffffff!important;
+    color: red!important;
+}
 .btn-primary{
     background-color: #3f425e!important;
-    border: 1px solid #3f425e!important;
+    border: 1px solid #6F4EF6!important;
     color: white!important;
     font-weight: bold;
     margin-top: 20px;
+    margin-right: 10px;
 }
 .btn-primary:hover{
-    background-color: #3f425e!important;
-    border: 1px solid #3f425e!important;
+    background-color: #6F4EF6!important;
+    border: 1px solid #6F4EF6!important;
+   
     color: white!important;
     font-weight: bold;
     
@@ -176,7 +247,11 @@ article p{
 .iconos, .iconos2 h4{
     font-size: 18px;
 }
-
+#container{
+    background-color: #22253D!important;
+    border: 1px solid #6F4EF6!important;
+    
+}
 .image {
     margin-top: 10%;
     position:relative;
