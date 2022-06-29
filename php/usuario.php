@@ -67,24 +67,25 @@ $extraer = $ejecutar->fetch_assoc();
   <!--Calculo IMC y se envian los datos en un form a su tabla de datos-->
   <div class="calcular-imc">
     <div id="container-imc">
-      <h2 class="login-header">Calcula tu IMC (índice de masa corporal)</h2>
-
-      <form name="IMC" action="imc.php" method="POST">
-        <p>Escribe tu PESO actual (kg):
-        <input type="text" name="peso" id="peso" size="3" maxlength="3" required="required">
-        </p>
-
-        <p>Escribe tu ALTURA actual (cm):
-        <input type="text" name="altura"value="" id="altura" size="3" maxlength="3" required="required">
-        </p>
-        <input type="button" id="guardar" value="Calcular IMC" onclick="calcularIMC();">
-        <br>
-        <p id="imc">Resultado
-        <input type="text" name="resultado" id="resultado" size="65">
-        <br>
-        </p>
-        <input type="submit" id="guardar" value="Guardar resultados">
-      </form>
+      <div class=" d-flex flex-column justify-content-center align-items-center" id="justificar">
+              <form name = "IMC" action="imc.php"method="POST">
+                  <div class = "text text-center mb-3">
+                      <h1><b>Calcula tu IMC</b><br>(índice de masa corporal)</h1>
+                      <h2>Tu IMC: </h2>
+                      <h3 name="resultado" id="resultado" size="65"></h3>
+                      
+                  </div>
+                  <div class = "login">
+                      <p>Escribe tu PESO actual (kg)</p>
+                      <input type="text" class="form-control bg-gray-main-dark-mode" name="peso" id="peso" size="3" maxlength="3" required="required">
+                      <p>Escribe tu ALTURA actual (cm):</p>
+                      <input type="text" class="form-control" name="altura"value="" id="altura" size="3" maxlength="3" required="required">
+                      <input type="button" class="btn btn-primary" id="guardar" value="Calcular IMC" onclick="calcularIMC();">
+                      <input  class = "btn btn-primary"type="submit" id="guardar" value="Guardar resultados">
+                      
+                  </div>
+              </form>
+       </div>
     </div>
   </div>
 <script src="../js/imc-script.js"></script>
