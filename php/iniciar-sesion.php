@@ -41,7 +41,7 @@ if ($stmt = $link->prepare('SELECT id, contraseña FROM registros WHERE nombre =
                    		else { echo " 
                             <script>
                                 alert('Contraseña Incorrecta');
-                                location.href='../iniciar-sesion.html';
+                                location.href='../nuevo-iniciar-sesion.html';
                             </script>
                             
                             "; }
@@ -52,7 +52,7 @@ if ($stmt = $link->prepare('SELECT id, contraseña FROM registros WHERE nombre =
           				else { echo "  
                             <script>
                                 alert('Este usuario no existe');
-                                location.href='../iniciar-sesion.html';
+                                location.href='../nuevo-iniciar-sesion.html';
                             </script>
                             
                             "; }

@@ -25,7 +25,7 @@ if ($stmt = $link->prepare("INSERT INTO registros (email, contraseña, nombre, e
         echo "
 		<script>
             alert('Registro Exitoso');
-            location.href='../iniciar-sesion.html';
+            location.href='../nuevo-iniciar-sesion.html';
     	</script>
 		 
 		 "; 
