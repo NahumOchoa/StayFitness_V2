@@ -1,7 +1,7 @@
-* {font-family: Century Gothic, sans-serif;}
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,500;1,600&display=swap');
+* {font-family: 'Open Sans', sans-serif;}
 body {
-    text-align: justify;
+    background-color: #0c1c34!important;
 }
 
 
@@ -46,20 +46,16 @@ body {
 /*Menu*/
 nav {
     background-color: #0c1c34 ;
-    ;
-    padding: 3px;
-    position: absolute;
-    width: 100%;
-    margin-top: -9px;
-    margin-left: -10px;
 }
 
 nav img{
-    float: left;
-    width: 7%;
-    margin-left: 3%;
+    
+    width: 60%;
+   
 }
-
+nav a{
+    color: white;
+}
 .redes {
     list-style: none;
     margin-left: 10%;
@@ -68,25 +64,11 @@ nav img{
 ul{
     list-style: none;
   }
-  #menu li>a{
-    color: #ffffff;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    min-width: 100px;
-    font-size: 18px;
-    margin-left: 30px;
-  }
 
   #w{
     color: #ffffff;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    min-width: 100px;
-    font-size: 18px;
     margin-left: 450px;
-    font-weight: bold;
+    
   }
 
   #menu li>a:hover{

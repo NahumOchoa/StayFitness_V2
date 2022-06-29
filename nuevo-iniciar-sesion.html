@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
 
 </head>
 <body>
+    
     <nav class="navbar navbar-expand-md p-0">
         <div class="container-fluid mx-3">
                 <a class="navbar-brand" href="index.html">
@@ -23,18 +25,22 @@
             </div>
         </div>
     </nav>    
+
+    
+   
+    
     <section class = "form-login-section">
-        <div class=" d-flex flex-column align-items-center">
-            <form action="">
+        <div class=" d-flex flex-column justify-content-center align-items-center" id="justificar">
+            <form action="php/iniciar-sesion.php"method="POST">
                 <div class = "text text-center mb-3">
                     <h1><b>Bienvenido de vuelta</b></h1>
                     <p>Que bueno verte otra vez :)</p>
                 </div>
                 <div class = "login">
-                    <p>Correo</p>
-                    <input type="email" class="form-control bg-gray-main-dark-mode" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <p>Usuario</p>
+                    <input type="text" name="nombre" class="form-control bg-gray-main-dark-mode" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <p>Contraseña</p>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" name="contraseña" class="form-control" id="exampleInputPassword1">
                     <button class="btn btn-outline-info">Inicia sesión</button>
                 </div>
                 <div class = "text text-center mb-3">

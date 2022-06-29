@@ -20,7 +20,9 @@ $extraer = $ejecutar->fetch_assoc();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--estilos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style-usuario.css">
+    <link rel="stylesheet" href="../css/iniciar-sesion.css">
     <link rel="stylesheet" href="../css/calendar.css">
     <link rel="stylesheet" href="../css/imc.css">
     <link rel="" href="iniciar-sesion.php">
@@ -30,17 +32,28 @@ $extraer = $ejecutar->fetch_assoc();
 <body>
 
 <!--Sección de menu-->
-<nav>
-    <img src="../img/logostayfitnessblanco.png">
-    <ul id="menu">
-      <li><a href="usuario.php">INICIO</a></li>
-      <li><a href="ejercicios.php">EJERCICIOS</a></li>
-      <li><a href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
-      <li id="w" href="">BIENVENIDO <?php 
-                echo $nombre?>
-      </li>
-    </ul>
-  </nav>
+<nav class="navbar navbar-expand-md p-0">
+        <div class="container-fluid mx-3 ">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../img/logostayfitnessblanco.png">    
+                </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav align-content-center">
+                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="usario.php">INICIO</a></li>
+                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="ejercicios.php">EJERCICIOS</a></li>
+                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
+                    <li class="nav-item link-li" id="w"><a class="nav-link link-a fs-5" href="#">BIENVENIDO<?php 
+                              echo $nombre?></a></li>
+                    
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div>
+    </nav>    
+    
+  
 
 <!--Banner con datos de sitio-->
     <header class="banner">

@@ -32,13 +32,22 @@ body{
 .form-control{
      background-color: #3f425e!important;
      border: 1px solid #3f425e!important;
-}
-.form-control{
-    line-height: 2.5;
+     color: white!important;
+     line-height: 2.5;
+   
 }
 .form-control:focus{
-    background-color: #3f425e;
-    border: 1px solid #49f2d2!important;
+    border: 1px solid #3f425e!important;
+    box-shadow: none!important;
+    color:white;
+}
+    
+.btn-primary{
+    background-color: #3f425e!important;
+    border: 1px solid #3f425e!important;
+    color: white!important;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .btn{
