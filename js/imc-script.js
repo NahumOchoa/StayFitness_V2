@@ -19,6 +19,11 @@ function calcularIMC() {
     resultado = "Peso normal";
   }
   //mostrar los datos obtenidos
-  document.getElementById("resultado").innerHTML = resultado + ", tu IMC es " +imc.toFixed(2);
+  if(imc.toFixed(2) === "NaN"){
+    document.getElementById("resultado").innerHTML = "Por favor ingrese datos validos";
+  }else{
+    document.getElementById("resultado").innerHTML = resultado + ", tu IMC es " +imc.toFixed(2);
+  }
+
 
   }
