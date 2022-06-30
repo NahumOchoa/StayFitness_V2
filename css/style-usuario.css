@@ -252,6 +252,16 @@ article p{
     border: 1px solid #6F4EF6!important;
     
 }
+.table-progreso{
+    background-color: #22253D!important;
+    border: 1px solid #6F4EF6!important;
+
+}
+.table-progreso caption{
+    background-color: #22253D!important;
+    border: 1px solid #6F4EF6!important;
+
+}
 .image {
     margin-top: 10%;
     position:relative;
@@ -336,40 +346,10 @@ footer{
     margin-top: 30px;
     
 }
-
-footer img{
-    float: left;
-    width: 5%;
+footer a{
+    color: #ffffff!important;
+    text-decoration: none!important;
 }
-
-footer h3{
-    margin-top: -1%;
-    margin-left: 30%;
-    color: #ffffff;
-    display: inline-block;
-}
-
-footer h3 .ayuda{
-    margin-top: -1%;
-    text-align: left;
-    margin-left: 20%;
-    color: #ffffff;
-    display: inline-block;
-}
-
-.redes{
-    text-align: right;
-    margin-right: 19%;
-}
-.redes li{
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.redes li img{
-    width: 100%;
-}
-
 table {
     background-color: #b0b8e8;
     text-align: center;

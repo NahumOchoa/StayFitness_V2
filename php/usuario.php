@@ -25,6 +25,7 @@ $extraer = $ejecutar->fetch_assoc();
     <link rel="stylesheet" href="../css/iniciar-sesion.css">
     <link rel="stylesheet" href="../css/calendar.css">
     <link rel="stylesheet" href="../css/imc.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="" href="iniciar-sesion.php">
     <title>StayFitness</title>
 </head>
@@ -146,44 +147,41 @@ $extraer = $ejecutar->fetch_assoc();
   </div>
 
   <!--Tabla de progreso de IMC-->
-  <table id="progreso">
-    <caption><h2>Tabla de progreso</h2></caption>
-      <tr>
-        <td><b>Fecha</b></td>
-        <td><b>Altura</b></td>
-        <td><b>Peso</b></td>
-        <td><b>Estado corporal y resultado de IMC</b></td>
-      </tr>
+  <div class="container justify-content-center mt-5">
+    <table class= "table-progreso"id="progreso">
+      <h2 align ="center">Tabla de progreso</h2>
+        <tr>
+          <td><b>Fecha</b></td>
+          <td><b>Altura</b></td>
+          <td><b>Peso</b></td>
+          <td><b>Estado corporal y resultado de IMC</b></td>
+        </tr>
 
+        <?php 
+        //se obtienen los datos requeridos de la tabla
+        require_once("conectar.php");
+        $sql= "SELECT * FROM registrosimc WHERE nombre ='".$nombre."'";
+        $result=mysqli_query($link,$sql);
+        //se muestran los datos en esta tabla
+        while($mostrar=mysqli_fetch_array($result)){
+        ?>
+
+        <tr>
+          <td><?php echo $mostrar['fecha'] ?></td>
+          <td><?php echo $mostrar['altura'] ?></td>
+          <td><?php echo $mostrar['peso'] ?></td>
+          <td><?php echo $mostrar['resultado'] ?></td> 
+        </tr>
       <?php 
-      //se obtienen los datos requeridos de la tabla
-      require_once("conectar.php");
-      $sql= "SELECT * FROM registrosimc WHERE nombre ='".$nombre."'";
-      $result=mysqli_query($link,$sql);
-      //se muestran los datos en esta tabla
-      while($mostrar=mysqli_fetch_array($result)){
+      }
       ?>
-
-      <tr>
-        <td><?php echo $mostrar['fecha'] ?></td>
-        <td><?php echo $mostrar['altura'] ?></td>
-        <td><?php echo $mostrar['peso'] ?></td>
-        <td><?php echo $mostrar['resultado'] ?></td> 
-      </tr>
-    <?php 
-    }
-    ?>
-    </table>
+      </table>
+    </div>
   </section>
 <!--Sección de pie de página-->
-    <footer id="contacto">
-        <img src="../img/logostayfitnessblanco.png">
-        <a href="ayuda.php"><h3 class="ayuda">AYUDA</h3></a>
-        <h3>REDES SOCIALES</h3>
-        <ul class="redes">
-            <li><a href="https://www.instagram.com/stayfitness4/?hl=es-la" target="_blank"><img src="../img/redes-sociales/instagram.png" alt=""></a></li>
-            <li><a href="https://vm.tiktok.com/ZTdU2C36b/" target="_blank"><img src="../img/redes-sociales/tiktok.png" alt=""></a></li>
-        </ul>
+    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 px-3  pt-3">STAYFITNESS. &copy; Todos Los Derechos Reservados 2022</p>
+        <a href="#"><i class="bi bi-instagram"></i></a>  
     </footer>
 </body>
 </html>
