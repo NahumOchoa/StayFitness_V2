@@ -46,7 +46,7 @@ require_once 'inc/dbconnection.php';
               </a>
           <div class="collapse navbar-collapse">
               <ul class="navbar-nav align-content-center">
-                  <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="index.html">INICIO</a></li>
+                  <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="">CONTRASEÑA OLVIDADA</a></li>
               </ul>
           </div>
       </div>

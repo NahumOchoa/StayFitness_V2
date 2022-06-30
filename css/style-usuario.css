@@ -110,6 +110,16 @@ body{
     margin-top: 10px;
 
 }
+#guardar2{
+    width: 170px!important;
+    cursor: pointer;
+    border: none;
+    outline: none!important;
+    padding: 10px!important;
+    border-radius: 5px!important;
+    color: white;
+    background-color: #768dd8;
+}
 #saveButton{
     background-color: #6F4EF6!important;
     border: 1px solid #6F4EF6!important;

@@ -4,8 +4,14 @@ nav{
     background-color:#0c1c34 ;
     
 }
-nav a{
+nav li a{
     color: white;
+    pointer-events: none; 
+    cursor: default; 
+    
+}
+nav li a:hover{
+    color:white;
 }
 nav img{
     width: 60%;

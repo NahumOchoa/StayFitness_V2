@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/style-usuario.css">
     <link rel="stylesheet" href="../css/ejercicios.css">
     <link rel="" href="iniciar-sesion.php">
-    <title>StayFitness</title>
+    <title>Ejercicios | StayFitness</title>
 </head>
 
 <body>

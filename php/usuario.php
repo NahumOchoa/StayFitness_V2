@@ -27,7 +27,7 @@ $extraer = $ejecutar->fetch_assoc();
     <link rel="stylesheet" href="../css/imc.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="" href="iniciar-sesion.php">
-    <title>StayFitness</title>
+    <title>Usuario | StayFitness</title>
 </head>
 
 <body>
@@ -83,7 +83,7 @@ $extraer = $ejecutar->fetch_assoc();
                         <p>Escribe tu ALTURA actual (cm):</p>
                         <input type="text" class="form-control" name="altura"value="" id="altura" size="3" maxlength="3" required="required">
                         <input type="button" class="btn btn-primary" id="guardar" value="Calcular IMC" onclick="calcularIMC();">
-                        <input  class = "btn btn-primary"type="submit" id="guardar" value="Guardar resultados">
+                        <input disabled="True" class = "btn btn-primary"type="submit" name="guardar2" id="guardar2" value="Guardar resultados">
                         
                     </div>
                 </form>
