@@ -63,3 +63,13 @@ body{
     color:#34d69b;
     text-decoration: none;
 }
+
+
+.error_message{
+    font-weight: bold;
+    color:red;
+}
+.success_message{
+    font-weight: bold;
+    color:green;
+}
