@@ -56,6 +56,9 @@ nav img{
     width: 60%;
    
 }
+#resultado{
+    color:black;
+}
 nav a{
     color: white;
 }
@@ -63,14 +66,16 @@ nav a{
     list-style: none;
     margin-left: 10%;
 }
-
+#ejercicio-footer{
+    margin-top: 250px;
+}
 ul{
     list-style: none;
   }
 
   #w{
     color: #ffffff;
-    margin-left: 450px;
+    margin-left: 550px;
     
   }
 

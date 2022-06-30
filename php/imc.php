@@ -17,7 +17,7 @@ mysqli_select_db($link,"bd_fitness") or die("<h2>Error de Conexion</h2>");
 	$peso = $_POST['peso'];
 	$resultado = $_POST['resultado'];
       $fecha = date("Y-m-d");
-      $datestop = $_POST['datestop'];
+      
     
       $insertar = "INSERT INTO `registrosimc`(`id`, `altura`, `peso`, `resultado`, `fecha`, `nombre`) VALUES ('?','$altura','$peso','$resultado','$fecha', '$nombre')";
 
@@ -34,6 +34,7 @@ mysqli_select_db($link,"bd_fitness") or die("<h2>Error de Conexion</h2>");
 		 
 		 "; 
                    }
+                   
 
 
 ?>

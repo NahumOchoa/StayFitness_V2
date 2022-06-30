@@ -35,12 +35,11 @@ $extraer = $ejecutar->fetch_assoc();
 <!--Sección de menu-->
 <nav class="navbar navbar-expand-md p-0">
         <div class="container-fluid mx-3 ">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="../index.html">
                     <img src="../img/logostayfitnessblanco.png">    
                 </a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav align-content-center">
-                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="usario.php">INICIO</a></li>
                     <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="ejercicios.php">EJERCICIOS</a></li>
                     <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
                     <li class="nav-item link-li" id="w"><a class="nav-link link-a fs-5" href="#">BIENVENIDO <?php 
@@ -74,7 +73,8 @@ $extraer = $ejecutar->fetch_assoc();
                     <div class = "text text-center mb-3">
                         <h1><b>Calcula tu IMC</b><br>(índice de masa corporal)</h1>
                         <h2>Tu IMC: </h2>
-                        <h3 name="resultado" id="resultado" size="65"></h3>
+                        <h3 name="resultado2" id="resultado2" size="65"></h3>
+                        <input type="hidden" name="resultado" id="resultado" size="50" >
                         
                     </div>
                     <div class = "login">

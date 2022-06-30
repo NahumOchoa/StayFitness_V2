@@ -20,9 +20,11 @@ function calcularIMC() {
   }
   //mostrar los datos obtenidos
   if(imc.toFixed(2) === "NaN"){
-    document.getElementById("resultado").innerHTML = "Por favor ingrese datos validos";
+    document.getElementById("resultado2").innerHTML = "Por favor ingrese datos validos";
+    document.getElementById("resultado").value = "Por favor ingrese datos validos"
   }else{
-    document.getElementById("resultado").innerHTML = resultado + ", tu IMC es " +imc.toFixed(2);
+    document.getElementById("resultado").value = resultado +", tu IMC es "+imc.toFixed(2);
+    document.getElementById("resultado2").innerHTML = resultado +", tu IMC es "+imc.toFixed(2);
   }
 
 
