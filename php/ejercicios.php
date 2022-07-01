@@ -22,7 +22,9 @@
                 </a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav align-content-center">
-                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="ejercicios.php">EJERCICIOS</a></li>
+                    <li class="nav-item link-li">
+                        <a class="nav-link link-a fs-5" href="../index.html">INICIO</a>
+                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="usuario.php">USUARIOS</a></li>
                     <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
                     
                 </ul>

@@ -28,6 +28,7 @@ $extraer = $ejecutar->fetch_assoc();
     <link rel="stylesheet" href="css/style.css">
     <link rel="" href="iniciar-sesion.php">
     <title>Usuario | StayFitness</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -40,7 +41,10 @@ $extraer = $ejecutar->fetch_assoc();
                 </a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav align-content-center">
-                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="ejercicios.php">EJERCICIOS</a></li>
+                    <li class="nav-item link-li">
+                        <a class="nav-link link-a fs-5" href="../index.html">INICIO</a>
+                    <li class="nav-item link-li">
+                      <a class="nav-link link-a fs-5" href="ejercicios.php">EJERCICIOS</a></li>
                     <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
                     <li class="nav-item link-li" id="w"><a class="nav-link link-a fs-5" href="#">BIENVENIDO <?php 
                               echo $nombre?></a></li>
@@ -79,9 +83,9 @@ $extraer = $ejecutar->fetch_assoc();
                     </div>
                     <div class = "login">
                         <p>Escribe tu PESO actual (kg)</p>
-                        <input type="text" class="form-control bg-gray-main-dark-mode" name="peso" id="peso" size="3" maxlength="3" required="required">
+                        <input type="number" min="1"max="600"class="form-control bg-gray-main-dark-mode" name="peso" id="peso" size="3" maxlength="3" required="required">
                         <p>Escribe tu ALTURA actual (cm):</p>
-                        <input type="text" class="form-control" name="altura"value="" id="altura" size="3" maxlength="3" required="required">
+                        <input type="number" min="70"max="272" class="form-control" name="altura"value="" id="altura" size="3" maxlength="3" required="required">
                         <input type="button" class="btn btn-primary" id="guardar" value="Calcular IMC" onclick="calcularIMC();">
                         <input disabled="True" class = "btn btn-primary"type="submit" name="guardar2" id="guardar2" value="Guardar resultados">
                         
@@ -91,6 +95,30 @@ $extraer = $ejecutar->fetch_assoc();
       </div>
     </div>
   <script src="../js/imc-script.js"></script>
+  <script>
+
+    
+      
+    $(document).ready(function () {
+      $('input#peso')
+        .keypress(function (event) {
+          if (event.which < 48 || event.which > 57 || this.value.length === 3 || parseInt(this.value)>60) {
+            return false;
+          }        
+    });
+  
+        
+   
+  });
+    $(document).ready(function () {
+      $('input#altura')
+        .keypress(function (event) {
+          if (event.which < 48 || event.which > 57 || this.value.length === 3 || parseInt(this.value)>27) {
+            return false;
+          }
+        });
+    });
+  </script>
 
 
   <!--implementacion del calendario designado para el ingreso de actividades fisicas-->

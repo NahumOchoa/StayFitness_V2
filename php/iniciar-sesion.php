@@ -2,6 +2,7 @@
 session_start();
 require_once("conectar.php");
 
+
 //VERIFICACION DE ESCRITURA DE DATOS EN EL FORM
 			if ( !isset($_POST['nombre'], $_POST['contraseña']) )
             {

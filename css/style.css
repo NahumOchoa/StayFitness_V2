@@ -242,7 +242,12 @@ footer p, a{
     color: white;
 
 }
-
+nav li a:hover{
+    color: #9b83f8!important;
+    border-bottom:  1px white solid;
+    border-radius: 4px;
+    padding: 5px;
+}
 .redes{
     text-align: right;
     margin-right: 19%;

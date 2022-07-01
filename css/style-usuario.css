@@ -29,7 +29,12 @@ body {
 .banner input:hover{
     width: 40px;
 }
-
+nav li a:hover{
+    color: #9b83f8!important;
+    border-bottom:  1px white solid;
+    border-radius: 4px;
+    padding: 5px;
+}
 .nombre {
     margin-left: 3%;
     color: #ffffff;

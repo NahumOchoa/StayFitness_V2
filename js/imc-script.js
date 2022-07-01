@@ -21,8 +21,8 @@ function calcularIMC() {
   }
   //mostrar los datos obtenidos
   if(imc.toFixed(2) === "NaN" | imc.toFixed(2) === "Infinity"){
-    document.getElementById("resultado2").innerHTML = "Por favor ingrese datos numericos";
-    document.getElementById("resultado").value = "Por favor ingrese datos numericos";
+    document.getElementById("resultado2").innerHTML = "Por favor ingrese datos correctos";
+    document.getElementById("resultado").value = "Por favor ingrese datos correctos";
     boton.disabled = true;
   }else{
     boton.disabled = false;
