@@ -14,6 +14,7 @@
 <body>
 
 <!--Sección de menu-->
+<<<<<<< Updated upstream
   <nav>
     <img src="../img/logostayfitnessblanco.png">
     <ul id="menu">
@@ -26,6 +27,24 @@
       </li>
     </ul>
   </nav>
+=======
+<nav class="navbar navbar-expand-md p-0">
+        <div class="container-fluid mx-3 ">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logostayfitnessblanco.png">    
+                </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav align-content-center">
+                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="usuario.php">USUARIO</a></li>
+                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
+                    
+                </ul>
+
+            </div>
+            
+        </div>
+    </nav>    
+>>>>>>> Stashed changes
 
 <!--Banner con datos de sitio-->
     <header class="banner">

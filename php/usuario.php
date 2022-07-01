@@ -30,6 +30,7 @@ $extraer = $ejecutar->fetch_assoc();
 <body>
 
 <!--Sección de menu-->
+<<<<<<< Updated upstream
 <nav>
     <img src="../img/logostayfitnessblanco.png">
     <ul id="menu">
@@ -41,6 +42,29 @@ $extraer = $ejecutar->fetch_assoc();
       </li>
     </ul>
   </nav>
+=======
+<nav class="navbar navbar-expand-md p-0">
+        <div class="container-fluid mx-3 ">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logostayfitnessblanco.png">    
+                </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav align-content-center">
+                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="ejercicios.php">EJERCICIO</a></li>
+                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
+                    <li class="nav-item link-li" id="w"><a class="nav-link link-a fs-5" href="#">BIENVENIDO <?php 
+                              echo $nombre?></a></li>
+                    
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div>
+    </nav>    
+    
+  
+>>>>>>> Stashed changes
 
 <!--Banner con datos de sitio-->
     <header class="banner">
@@ -52,6 +76,7 @@ $extraer = $ejecutar->fetch_assoc();
     <!--Contenido de Desarrollo de Pagina-->
 
   <!--Calculo IMC y se envian los datos en un form a su tabla de datos-->
+<<<<<<< Updated upstream
   <div class="calcular-imc">
     <div id="container-imc">
       <h2 class="login-header">Calcula tu IMC (índice de masa corporal)</h2>
@@ -72,6 +97,32 @@ $extraer = $ejecutar->fetch_assoc();
         </p>
         <input type="submit" id="guardar" value="Guardar resultados">
       </form>
+=======
+  <section class="container justify-content-center mt-5">
+    <div class="calcular-imc">
+      <div id="container-imc">
+        <div class=" d-flex flex-column justify-content-center align-items-center" id="justificar">
+                <form name = "IMC" action="imc.php"method="POST">
+                    <div class = "text text-center mb-3">
+                        <h1><b>Calcula tu IMC</b><br>(índice de masa corporal)</h1>
+                        <h2>Tu IMC: </h2>
+                        <h3 name="resultado2" id="resultado2" size="65"></h3>
+                        <input type="hidden" name="resultado" id="resultado" size="50" >
+                        
+                    </div>
+                    <div class = "login">
+                        <p>Escribe tu PESO actual (kg)</p>
+                        <input type="text" class="form-control bg-gray-main-dark-mode" name="peso" id="peso" size="3" maxlength="3" required="required">
+                        <p>Escribe tu ALTURA actual (cm):</p>
+                        <input type="text" class="form-control" name="altura"value="" id="altura" size="3" maxlength="3" required="required">
+                        <input type="button" class="btn btn-primary" id="guardar" value="Calcular IMC" onclick="calcularIMC();">
+                        <input  disabled="true"class = "btn btn-primary"type="submit" name="guardar2" id="guardar2" value="Guardar resultados">
+                        
+                    </div>
+                </form>
+        </div>
+      </div>
+>>>>>>> Stashed changes
     </div>
   </div>
 <script src="../js/imc-script.js"></script>

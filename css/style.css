@@ -289,3 +289,23 @@ footer h3 .ayuda{
     width: 100%;
 }
 
+<<<<<<< Updated upstream
+=======
+@media (max-width: 992px) {
+    .text {
+        text-align: center;
+    }
+
+    .img-ejercicio {
+        width: 50%;
+        height: auto;
+    }
+
+    .img-fluid {
+        max-width: 80%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+>>>>>>> Stashed changes

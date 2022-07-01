@@ -22,6 +22,7 @@
   <!--Seccion del formulario para registro en el sitio-->
   <div class="login">
       <!--manda por action por php los datos para registro en BD-->
+<<<<<<< Updated upstream
       <h2 class="login-header">Bienvenido a StayFitness</h2>
       <form action="php/registro.php" method="POST" class="login-container">
       <p><input type="email" name="email" placeholder="Email"></p>
@@ -33,3 +34,29 @@
     </form>
   </div>
 </body>
+=======
+      <form class="col-lg-5" action="php/registro.php" method="POST">
+        <div class="text text-center mb-3">
+          <h1><b>Crear una cuenta</b></h1>
+        </div>
+        <div class="login">
+          <p><label for="txt-email">Correo Electronico</label></p>
+          <input id="txt-email" class="form-control bg-gray-main-dark-mode" size="40" maxlength="40" type="email" name="email" required>
+          <p><label for="txt-password">Contraseña</label></p>
+          <input id="txt-password" class="form-control bg-gray-main-dark-mode" size="30" maxlength="30" type="password" name="contraseña" required minlength="8">
+          <p><label for="txt-name">Nombre de Usuario</label></p>
+          <input id="txt-name" class="form-control bg-gray-main-dark-mode" size="30" maxlength="30" type="text" name="nombre" required>
+          <p><label for="txt-age">Edad</label></p>
+          <input id="txt-age" class="form-control bg-gray-main-dark-mode" size="2" maxlength="2" type="number" name="edad" min="15" max="100" required>
+          <input role="button" class="btn btn-outline-info"  type="submit" value="Siguiente">
+        </div>
+        <div class="text text-center mb-3">
+          <p>¿Ya tienes una cuenta? <a href="nuevo-iniciar-sesion.html" class="Registrate">Iniciar sesión</a></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
+>>>>>>> Stashed changes
