@@ -29,6 +29,7 @@ $extraer = $ejecutar->fetch_assoc();
     <link rel="" href="iniciar-sesion.php">
     <title>Usuario | StayFitness</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="img/logostayfitnessblanco.png" type="image/x-icon">
 </head>
 
 <body>
@@ -183,6 +184,7 @@ $extraer = $ejecutar->fetch_assoc();
           <td><b>Altura</b></td>
           <td><b>Peso</b></td>
           <td><b>Estado corporal y resultado de IMC</b></td>
+          <td><b></b></td>
         </tr>
 
         <?php 
@@ -199,6 +201,13 @@ $extraer = $ejecutar->fetch_assoc();
           <td><?php echo $mostrar['altura'] ?></td>
           <td><?php echo $mostrar['peso'] ?></td>
           <td><?php echo $mostrar['resultado'] ?></td> 
+          <td><button type="button" class="btn btn-outline-danger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"></path>
+                  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path>
+                </svg>
+                Eliminar
+              </button></td>
         </tr>
       <?php 
       }
@@ -206,6 +215,15 @@ $extraer = $ejecutar->fetch_assoc();
       </table>
     </div>
   </section>
+  <div id="deleteEventModal">
+      <h2 align="center"><b>¿Seguro que deseas eliminar peso?</b></h2>
+      <p id="eventText"></p>
+      <button id="deleteButton">Eliminar </button>
+      <button id="closeButton">Cerrar</button>
+      <script src="../js/calendar-script.js"></script>
+  </div>
+    
+  
 <!--Sección de pie de página-->
     <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
         <p class="fs-5 px-3  pt-3">STAYFITNESS. &copy; Todos Los Derechos Reservados 2022</p>

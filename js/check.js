@@ -1,0 +1,63 @@
+function comprobarNombre(valor, campo) {
+    const alert2 = document.querySelector("#alert-form");
+    var mensaje = "";
+    
+    if (this.value == "") {
+      mensaje = "El email no puede estar vacío";
+      alert2.innerText = mensaje;  
+    } else if (this.value.indexOf("@") < 0) {
+      mensaje = "El email debe contener una @";
+      alert2.innerText = mensaje;  
+    } else if (this.value.indexOf(".com", this.value.indexOf("@")) < 0) {
+      mensaje = "El email debe contener .com detras de la @";
+      alert2.innerText = mensaje;  
+    } 
+    
+    // mostrar/resetear mensaje (el mensaje se resetea poniendolo a "")
+    this.setCustomValidity(mensaje);
+    alert2.innerText = mensaje;
+  }
+function comprobarPassword(valor, campo) {
+    const alert2 = document.querySelector("#alert-form2");
+    var mensaje = "";
+    
+    if (this.value == "") {
+      mensaje = "El password no puede estar vacío";
+      alert2.innerText = mensaje;  
+    } else if (this.value.length < 8) {
+      mensaje = "El password debe tener al menos 8 caracteres";
+      alert2.innerText = mensaje;  
+    } 
+    
+    // mostrar/resetear mensaje (el mensaje se resetea poniendolo a "")
+    this.setCustomValidity(mensaje);
+    alert2.innerText = mensaje;
+  }
+  function comprobarUsuario(valor, campo) {
+    const alert2 = document.querySelector("#alert-form3");
+    var mensaje = "";
+    
+    if (this.value == "") {
+      mensaje = "El usuario no puede estar vacío";
+      alert2.innerText = mensaje;  
+    }
+    // mostrar/resetear mensaje (el mensaje se resetea poniendolo a "")
+    this.setCustomValidity(mensaje);
+    alert2.innerText = mensaje;
+  }
+
+  const email = document.querySelector("#txt-email");
+  const password = document.querySelector("#txt-password");
+  const usuario = document.querySelector("#txt-name");
+  
+  
+  
+  
+  
+  // cuando se cambie el valor del campo o sea incorrecto, mostrar/resetear mensaje
+  email.addEventListener("invalid", comprobarNombre);
+  email.addEventListener("input", comprobarNombre);
+  password.addEventListener("invalid", comprobarPassword);
+  password.addEventListener("input", comprobarPassword);
+  usuario.addEventListener("invalid", comprobarUsuario);
+  usuario.addEventListener("input", comprobarUsuario);

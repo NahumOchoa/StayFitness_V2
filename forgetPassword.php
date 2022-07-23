@@ -5,7 +5,7 @@ require_once 'inc/dbconnection.php';
         if(!empty($_POST["user-email"])){
             $email = trim($_POST["user-email"]);
         } else {
-            $error_message = "<li>Email is required</li>";
+            $error_message = "<li>Email es requerido</li>";
         }
         if(empty($error_message)){
             $query = $db->prepare("SELECT nombre, email FROM registros WHERE email =?");
@@ -17,7 +17,7 @@ require_once 'inc/dbconnection.php';
 //            echo "<script type='text/javascript'>alert('$msg');</script>";
             require_once ("php/forget-password-mail.php");
         } else {
-            $error_message = 'No Email Found';
+            $error_message = 'Email no encontrado';
         }
     }
 
@@ -34,7 +34,7 @@ require_once 'inc/dbconnection.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style-iniciar-sesion.css">
-    <link rel="stylesheet" href="css/style-iniciar-sesion.css">
+    <link rel="shortcut icon" href="img/logostayfitnessblanco.png" type="image/x-icon">
 </head>
 
 <body>
@@ -62,13 +62,14 @@ require_once 'inc/dbconnection.php';
         </div>
         <div class="login">
           <p><label for="txt-email">Correo Electronico</label></p>
+          <p class="error" id="alert-form"></p>
           <?php if(!empty($success_message)) { ?>
                     <div class="success_message"><?php echo $success_message ?>
                     <?php } ?>
                     <?php if(isset($error_message)) { ?> 
                     <div class="error_message"><?php echo $error_message; ?></div>
                     <?php } ?>
-          <input name="user-email" class="form-control bg-gray-main-dark-mode" type="email" name="email" required>
+          <input name="user-email" id="txt-email"class="form-control bg-gray-main-dark-mode" type="email" >
           <input role="button" class="btn btn-outline-info"  type="submit" value="Restablecer" name="forget-password" id="forget-password">
         </div>
         <div class="text text-center mb-3">
@@ -76,6 +77,7 @@ require_once 'inc/dbconnection.php';
         </div>
       </form>
     </div>
+    <script src="./js/check.js"></script>
   </section>
 
 </body>

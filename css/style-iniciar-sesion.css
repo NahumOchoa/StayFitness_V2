@@ -27,6 +27,11 @@ body{
     color: white;
     margin-top: 10px;
 }
+.error{
+    color: red!important;
+    margin-top: 10px;
+    font-size: 10px;
+}	
 .login{
     
     margin-top: 10px;
