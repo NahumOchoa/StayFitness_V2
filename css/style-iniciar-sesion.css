@@ -27,6 +27,10 @@ body{
     color: white;
     margin-top: 10px;
 }
+.error-svg{
+    width: 70%;
+    
+}
 .error{
     color: red!important;
     margin-top: 10px;
@@ -46,6 +50,10 @@ body{
      color: white!important;
      line-height: 2.5;
    
+}
+#error-a{
+    pointer-events: auto!important;
+    cursor: pointer!important;
 }
 .form-control:focus{
     border: 1px solid #3f425e!important;

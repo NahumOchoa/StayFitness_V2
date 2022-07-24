@@ -45,8 +45,14 @@ function comprobarPassword(valor, campo) {
     this.setCustomValidity(mensaje);
     alert2.innerText = mensaje;
   }
-
-  const email = document.querySelector("#txt-email");
+  if(document.querySelector("#txt-email")===null){
+    
+  }else{
+    const email = document.querySelector("#txt-email");
+    email.addEventListener("invalid", comprobarNombre);
+    email.addEventListener("input", comprobarNombre);
+  }
+  
   const password = document.querySelector("#txt-password");
   const usuario = document.querySelector("#txt-name");
   
@@ -55,8 +61,7 @@ function comprobarPassword(valor, campo) {
   
   
   // cuando se cambie el valor del campo o sea incorrecto, mostrar/resetear mensaje
-  email.addEventListener("invalid", comprobarNombre);
-  email.addEventListener("input", comprobarNombre);
+  
   password.addEventListener("invalid", comprobarPassword);
   password.addEventListener("input", comprobarPassword);
   usuario.addEventListener("invalid", comprobarUsuario);
