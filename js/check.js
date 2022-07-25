@@ -1,4 +1,5 @@
 function comprobarNombre(valor, campo) {
+    
     const alert2 = document.querySelector("#alert-form");
     var mensaje = "";
     
@@ -18,6 +19,7 @@ function comprobarNombre(valor, campo) {
     alert2.innerText = mensaje;
   }
 function comprobarPassword(valor, campo) {
+    
     const alert2 = document.querySelector("#alert-form2");
     var mensaje = "";
     
@@ -34,11 +36,26 @@ function comprobarPassword(valor, campo) {
     alert2.innerText = mensaje;
   }
   function comprobarUsuario(valor, campo) {
+    
     const alert2 = document.querySelector("#alert-form3");
     var mensaje = "";
     
     if (this.value == "") {
       mensaje = "El usuario no puede estar vacío";
+      alert2.innerText = mensaje;  
+    }
+    // mostrar/resetear mensaje (el mensaje se resetea poniendolo a "")
+    this.setCustomValidity(mensaje);
+    alert2.innerText = mensaje;
+  }
+
+  function comprobarEdad(valor, campo) {
+    
+    const alert2 = document.querySelector("#alert-form4");
+    var mensaje = "";
+    
+    if (this.value == "") {
+      mensaje = "La edad no puede estar vacío";
       alert2.innerText = mensaje;  
     }
     // mostrar/resetear mensaje (el mensaje se resetea poniendolo a "")
@@ -51,6 +68,13 @@ function comprobarPassword(valor, campo) {
     const email = document.querySelector("#txt-email");
     email.addEventListener("invalid", comprobarNombre);
     email.addEventListener("input", comprobarNombre);
+  }
+  if(document.querySelector("#txt-age")===null){
+    
+  }else{
+    const email = document.querySelector("#txt-age");
+    email.addEventListener("invalid", comprobarEdad);
+    email.addEventListener("input", comprobarEdad);
   }
   
   const password = document.querySelector("#txt-password");

@@ -2,8 +2,8 @@
 
 session_start();
 //conexion con la base de datos y el servidor
-$link = mysqli_connect("localhost","root","") or die("<h2>No se encuentra el servidor</h2>");
-mysqli_select_db($link,"bd_fitness") or die("<h2>Error de Conexion</h2>");
+$link = mysqli_connect("localhost","root","") or die(header ("Location: ../error.html"));
+mysqli_select_db($link,"bd_fitness") or die(header ("Location: ../error.html"));
 
 
       $nombre = $_SESSION['nombre'];

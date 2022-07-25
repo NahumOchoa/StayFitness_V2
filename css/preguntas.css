@@ -6,9 +6,15 @@
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background: #b0b8e8 ;
+    background: white;
     border-radius: 10px;
+   
   }
+  .accordion:hover {
+    cursor: pointer;
+    background: #f2f2f2;
+  }
+    
   .accordion__question p {
     font-weight: bold;
     margin: 5px;
@@ -31,6 +37,10 @@
   .accordion__answer {
     display: none;
   }
+  .accordion.active{
+    background: #f2f2f2;
+  }
   .accordion.active .accordion__answer {
     display: block;
+    background: #f2f2f2;
   }
