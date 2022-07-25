@@ -35,7 +35,7 @@ $extraer = $ejecutar->fetch_assoc();
 <body>
 
 <!--Sección de menu-->
-<nav class="navbar navbar-expand-md p-0">
+<nav class="navbar navbar-expand-md p-0 fixed-top">
         <div class="container-fluid mx-3 ">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../img/logostayfitnessblanco.png">    
@@ -61,11 +61,14 @@ $extraer = $ejecutar->fetch_assoc();
   
 
 <!--Banner con datos de sitio-->
-    <header class="banner">
-        <div class="nombre">
-            <h1>STAYFITNESS</h1>
-        </div>    
-    </header>
+  <div class="container-fluid banner">
+              <h1>STAYFITNESS </h1>
+              <h2>¡Bienvenido <?php echo $nombre?>!</h2>
+  </div>
+  
+
+            
+       
 
     <!--Contenido de Desarrollo de Pagina-->
 
@@ -74,7 +77,7 @@ $extraer = $ejecutar->fetch_assoc();
     <div class="calcular-imc">
       <div id="container-imc">
         <div class=" d-flex flex-column justify-content-center align-items-center" id="justificar">
-                <form name = "IMC" action="imc.php"method="POST">
+                <form id = "IMCC"name = "IMC" action="imc.php"method="POST">
                     <div class = "text text-center mb-3">
                         <h1><b>Calcula tu IMC</b><br>(índice de masa corporal)</h1>
                         <h2>Tu IMC: </h2>
@@ -84,10 +87,12 @@ $extraer = $ejecutar->fetch_assoc();
                     </div>
                     <div class = "login">
                         <p>Escribe tu PESO actual (kg)</p>
+                        <p class="error" id="alert-peso"></p>
                         <input type="number" min="1"max="600"class="form-control bg-gray-main-dark-mode" name="peso" id="peso" size="3" maxlength="3" required="required">
                         <p>Escribe tu ALTURA actual (cm):</p>
+                        <p class="error" id="alert-altura"></p>
                         <input type="number" min="70"max="272" class="form-control" name="altura"value="" id="altura" size="3" maxlength="3" required="required">
-                        <input type="button" class="btn btn-primary" id="guardar" value="Calcular IMC" onclick="calcularIMC();">
+                        <input  type="button" class="btn btn-primary" id="guardar" value="Calcular IMC" onclick="calcularIMC();">
                         <input disabled="True" class = "btn btn-primary"type="submit" name="guardar2" id="guardar2" value="Guardar resultados">
                         
                     </div>
@@ -95,6 +100,7 @@ $extraer = $ejecutar->fetch_assoc();
         </div>
       </div>
     </div>
+  <script src="../js/check-imc.js"></script>
   <script src="../js/imc-script.js"></script>
   <script>
 
@@ -103,7 +109,7 @@ $extraer = $ejecutar->fetch_assoc();
     $(document).ready(function () {
       $('input#peso')
         .keypress(function (event) {
-          if (event.which < 48 || event.which > 57 || this.value.length === 3 || parseInt(this.value)>60) {
+          if (event.which < 48 || event.which > 57 || this.value.length === 3 || parseInt(this.value)>60 || parseInt(this.value)< 1) {
             return false;
           }        
     });
@@ -114,11 +120,16 @@ $extraer = $ejecutar->fetch_assoc();
     $(document).ready(function () {
       $('input#altura')
         .keypress(function (event) {
-          if (event.which < 48 || event.which > 57 || this.value.length === 3 || parseInt(this.value)>27) {
+          if (event.which < 48 || event.which > 57 || this.value.length === 3 || parseInt(this.value)>27 || parseInt(this.value)< 1 ) {
             return false;
           }
         });
     });
+  
+    
+
+
+ 
   </script>
 
 

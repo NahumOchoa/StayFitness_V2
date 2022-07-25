@@ -8,13 +8,13 @@ body {
 
 /*Banner*/
 .banner {
-    display:inline-flex;
-    background-image: url(../img/disco.jpg);
-    background-color: #292b3d;
-    margin-top: 0px;
-    width: 101%;
-    height: 90px;
-    margin-left: -10px;
+    background-color: #070E27!important;
+    height: 40vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner div{
@@ -35,6 +35,11 @@ nav li a:hover{
     border-radius: 4px;
     padding: 5px;
 }
+.error{
+    color: red!important;
+    margin-top: 10px;
+    font-size: 10px;
+}	
 .nombre {
     margin-left: 3%;
     color: #ffffff;
