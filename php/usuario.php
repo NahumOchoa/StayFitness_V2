@@ -5,7 +5,7 @@ include "conectar.php";
 
 $nombre = $_SESSION['nombre'];
 if(!isset($nombre)){
-  header("location:../iniciar-sesion.html");
+  header("location:../nuevo-iniciar-sesion.html");
 }
  //extraer los datos del usuario que se tiene dentro de la variable sesion
 $consulta = "SELECT * FROM registros WHERE nombre = '$nombre'";
