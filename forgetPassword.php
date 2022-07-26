@@ -1,6 +1,9 @@
 <?php
 ob_start();
-require_once 'inc/dbconnection.php';
+error_reporting(0);
+$link = mysqli_connect("localhost","root","") or die(header ("Location: error.html"));
+mysqli_select_db($link,"bd_fitness") or die(header ("Location: error.html"));
+require_once 'inc/dbconnection.php' ;
     if(isset($_POST["forget-password"])){
         if(!empty($_POST["user-email"])){
             $email = trim($_POST["user-email"]);
