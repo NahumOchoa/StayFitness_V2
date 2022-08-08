@@ -38,7 +38,7 @@ $extraer = $ejecutar->fetch_assoc();
 <nav class="navbar navbar-expand-md p-0 fixed-top">
         <div class="container-fluid mx-3 ">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/logostayfitnessblanco.png">    
+                    <img alt="logo-StayFitness" src="../img/logostayfitnessblanco.png">    
                 </a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav align-content-center">
@@ -238,5 +238,6 @@ $extraer = $ejecutar->fetch_assoc();
         <p class="fs-5 px-3  pt-3">STAYFITNESS. &copy; Todos Los Derechos Reservados 2022</p>
         <a href="#"><i class="bi bi-instagram"></i></a>  
     </footer>
+    
 </body>
 </html>

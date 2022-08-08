@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-md p-0">
       <div class="container-fluid mx-3">
               <a class="navbar-brand" href="index.html">
-                  <img src="img/logostayfitnessblanco.png">    
+                  <img alt="logo-StayFitness" src="img/logostayfitnessblanco.png">    
               </a>
           <div class="collapse navbar-collapse">
               <ul class="navbar-nav align-content-center">
@@ -41,7 +41,7 @@
         <div class="login">
           <p><label for="txt-email">Correo Electronico</label></p>
           <p class="error" id="alert-form"></p>
-          <input id="txt-email" class="form-control bg-gray-main-dark-mode" type="email" name="email" maxlength="40" required>
+          <input id="txt-email" class="form-control bg-gray-main-dark-mode" type="email" name="email"  maxlength="40" required>
           <p><label for="txt-password">Contraseña</label></p>
           <p class="error" id="alert-form2"></p>
           <input id="txt-password" class="form-control bg-gray-main-dark-mode" type="password" name="contraseña" required minlength="8" maxlength="40">
@@ -62,8 +62,6 @@
   </section>
   <script>
 
-    
-      
     $(document).ready(function () {
       $('input#txt-age')
         .keypress(function (event) {

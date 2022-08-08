@@ -34,7 +34,7 @@ $extraer = $ejecutar->fetch_assoc();
 <nav class="navbar navbar-expand-md p-0">
         <div class="container-fluid mx-3 ">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/logostayfitnessblanco.png">    
+                    <img  alt="logo-StayFitness" src="../img/logostayfitnessblanco.png">    
                 </a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav align-content-center">
@@ -93,6 +93,9 @@ $extraer = $ejecutar->fetch_assoc();
           require_once("conectar.php");
           $sql= "SELECT `url` FROM `videos` WHERE `nombre` = 	'Subir1'";
           $result=mysqli_query($link,$sql);
+          if(!$result){
+            header("Location: ../error.html");
+          }
           while($mostrar=mysqli_fetch_array($result)){
         ?>>
           <iframe width="560" height="315" src="<?php echo $mostrar['url']?>" 
