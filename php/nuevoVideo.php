@@ -26,6 +26,7 @@ $extraer = $ejecutar->fetch_assoc();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style-usuario.css">
     <link rel="stylesheet" href="../css/nuevoVideo.scss">
+
     <link rel="shortcut icon" href="../img/logostayfitnessblanco.png" type="image/x-icon">
     <link rel="" href="iniciar-sesion.php">
 
@@ -204,20 +205,20 @@ $extraer = $ejecutar->fetch_assoc();
       <!--manda por action por php los datos para registro en BD-->
       <form class="col-lg-5" action="../php/videos.php" method="POST">
         <div class="text text-center mb-3">
-        <h2 style="text-align: center;">Agregar Video Nuevo</h2>
+        <h2 style="text-align: center;">Agregar Nuevo Video</h2>
         </div>
         <div class="login">
-          
+        
           <p><label for="txt-email">Categoria</label></p>
           <p class="error" id="alert-form"></p>
           <div class="select">
-          <select id="categoria" name="categoria">
-          
+          <select class ="form-select" id="categoria" name="categoria"> 
+
         </select></div>
           <p><label for="txt-password">Subcategoria</label></p>
           <p class="error" id="alert-form2"></p>
           <div class= "select">
-          <select id="subcategoria" name="subcategoria">
+          <select class ="form-select" id="subcategoria" name="subcategoria">
           
         </select>
         </div>

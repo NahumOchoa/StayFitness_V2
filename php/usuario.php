@@ -161,7 +161,7 @@ $extraer = $ejecutar->fetch_assoc();
     <div class = "container justify-content-center  id="header">
       <div id="newEventModal">
         <h2 align="center"><b>Ejercicio realizado</b></h2>
-        <select class ="combo"name="select" id="eventTitleInput"  placeholder="Ejercicio realizado" autofocus ="Value 2">
+        <select class ="combo" name="select" id="eventTitleInput"  placeholder="Ejercicio realizado" autofocus ="Value 2">
           <option value="Aumento de masa corporal" selected>Aumento de masa corporal</option>
           <option value="Ejercicios para bajar de peso" >Ejercicios para bajar de peso</option>
           <option value="Ejercicios para mantenerte">Ejercicios para mantenerte </option>

@@ -84,8 +84,9 @@ $extraer = $ejecutar->fetch_assoc();
   <div class="layout">
     <!-- EJERCICIOS PARA SUBIR DE PESO-->
     <?php 
-        if (strcmp($nombre, "admin") == 0 ) {        
-          echo '<a type="button" name="add" class="btn btn-success" href="../php/nuevoVideo.php"> Agregar Video</a>';
+        if (strcmp($nombre, "admin") == 0 ) {     
+          
+          echo '<a type="button" name="add" class="btn btn-primary" href="../php/nuevoVideo.php"> Agregar Video</a>';
         }
         ?>
     <div class="accordion categoria">    
