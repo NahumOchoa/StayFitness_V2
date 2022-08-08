@@ -114,39 +114,17 @@ $extraer = $ejecutar->fetch_assoc();
         <!--Videos Aumento de masa corporal-->
         
         <h3>Aumento de masa corporal</h3>
-<<<<<<< Updated upstream
-        <!--Video 1-->
-        <p <?php 
-          require_once("conectar.php");
-          $sql= "SELECT `url` FROM `videos` WHERE `nombre` = 	'Subir1'";
-          $result=mysqli_query($link,$sql);
-          if(!$result){
-            header("Location: ../error.html");
-          }
-          while($mostrar=mysqli_fetch_array($result)){
-        ?>>
-          <iframe width="560" height="315" src="<?php echo $mostrar['url']?>" 
-          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-          clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </p<?php } ?> > 
-          
-        <!--Video 2-->
-        <p <?php 
-=======
         <?php 
->>>>>>> Stashed changes
           require_once("conectar.php");
           $sql= "SELECT * FROM `videos` WHERE `subcategoria`= 'increase-b-mass' ORDER BY `id`";
           $result = mysqli_query($link, $sql);
 
-          if (!$result)
-          {
-            echo 'Error Message: ' . mysqli_error($connect) . '<br>';
-            exit;
-          }
+          if(!$result){
+            header("Location: ../error.html");
+          }          
 
           // Display the number of records found, this is for testing, if you're not testing please toggle line comment 
-          echo '<p>The query found ' . mysqli_num_rows($result) . ' rows</p>';
+          //echo '<p>The query found ' . mysqli_num_rows($result) . ' rows</p>';
 
           /*if($result = mysqli_query($link, $sql)){
             if(mysqli_num_rows($result) > 0){
@@ -185,7 +163,7 @@ $extraer = $ejecutar->fetch_assoc();
             }            
             echo '</p>';         
           }
-          ?>  
+        ?>  
         
       </div>
     </div>
@@ -203,14 +181,12 @@ $extraer = $ejecutar->fetch_assoc();
           $sql= "SELECT * FROM `videos` WHERE `subcategoria`= 'cardio' ORDER BY `id`";
           $result = mysqli_query($link, $sql);
 
-          if (!$result)
-          {
-            echo 'Error Message: ' . mysqli_error($connect) . '<br>';
-            exit;
-          }
+          if(!$result){
+            header("Location: ../error.html");
+          }          
 
-          // Display the number of recirds found
-          echo '<p>The query found ' . mysqli_num_rows($result) . ' rows:</p>';
+          // Display the number of records found, this is for testing, if you're not testing please toggle line comment 
+          //echo '<p>The query found ' . mysqli_num_rows($result) . ' rows</p>';
 
           /*if($result = mysqli_query($link, $sql)){
             if(mysqli_num_rows($result) > 0){
@@ -266,14 +242,12 @@ $extraer = $ejecutar->fetch_assoc();
           $sql= "SELECT * FROM `videos` WHERE `subcategoria`= 'tone-body' ORDER BY `id`";
           $result = mysqli_query($link, $sql);
 
-          if (!$result)
-          {
-            echo 'Error Message: ' . mysqli_error($connect) . '<br>';
-            exit;
-          }
+          if(!$result){
+            header("Location: ../error.html");
+          }          
 
-          // Display the number of recirds found
-          echo '<p>The query found ' . mysqli_num_rows($result) . ' rows:</p>';
+          // Display the number of records found, this is for testing, if you're not testing please toggle line comment 
+          //echo '<p>The query found ' . mysqli_num_rows($result) . ' rows</p>';
 
           /*if($result = mysqli_query($link, $sql)){
             if(mysqli_num_rows($result) > 0){
@@ -321,14 +295,12 @@ $extraer = $ejecutar->fetch_assoc();
           $sql= "SELECT * FROM `videos` WHERE `subcategoria`= 'flex' ORDER BY `id`";
           $result = mysqli_query($link, $sql);
 
-          if (!$result)
-          {
-            echo 'Error Message: ' . mysqli_error($connect) . '<br>';
-            exit;
-          }
+          if(!$result){
+            header("Location: ../error.html");
+          }          
 
-          // Display the number of recirds found
-          echo '<p>The query found ' . mysqli_num_rows($result) . ' rows:</p>';
+          // Display the number of records found, this is for testing, if you're not testing please toggle line comment 
+          //echo '<p>The query found ' . mysqli_num_rows($result) . ' rows</p>';
 
           /*if($result = mysqli_query($link, $sql)){
             if(mysqli_num_rows($result) > 0){
