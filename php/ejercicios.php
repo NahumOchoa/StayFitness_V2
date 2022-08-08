@@ -33,7 +33,6 @@ $extraer = $ejecutar->fetch_assoc();
 
 <!--Sección de menu-->
 <nav class="navbar navbar-expand-md p-0">
-<<<<<<< Updated upstream
         <div class="container-fluid mx-3 ">
                 <a class="navbar-brand" href="../index.html">
                     <img  alt="logo-StayFitness" src="../img/logostayfitnessblanco.png">    
@@ -46,7 +45,7 @@ $extraer = $ejecutar->fetch_assoc();
                     <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
                     <li class="nav-item link-li" id="w"><a class="nav-link link-a fs-5" href="#">BIENVENIDO <?php 
                               echo $nombre?></a></li>
-=======
+
   <div class="container-fluid mx-3 ">
     <a class="navbar-brand" href="../index.html">
       <img src="../img/logostayfitnessblanco.png">    
@@ -62,7 +61,6 @@ $extraer = $ejecutar->fetch_assoc();
           echo $nombre?>
           </a>
         </li>
->>>>>>> Stashed changes
                     
       </ul>
 
