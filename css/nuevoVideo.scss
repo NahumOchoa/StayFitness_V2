@@ -1,0 +1,146 @@
+$glass: rgba(255, 255, 255, 0.2);
+$glass-icon: rgba(255, 255, 255, 0.3);
+$gradient: linear-gradient(35deg, rgb(0, 255, 55), rgb(19, 0, 128));
+$option: #233286;
+
+.layout {
+    width: 610px;
+    margin: auto;
+  }
+
+  .accordion {
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background: #070E27;
+    border-radius: 10px;
+  }
+
+  .categoria p {
+    font-weight: bold;
+    margin: 5px;
+    padding: 0;
+    font-family: Century Gothic, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .url p {
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    font-family: Century Gothic, sans-serif;
+    color: rgb(0, 0, 0);
+    background: #63599c  ;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+
+  .url h3{
+    text-align: center;
+  }
+
+  .accordion:hover {
+    cursor: pointer;
+    background-color: #22253D;
+  }
+
+  .url {
+    display: none;
+  }
+  .accordion.active {
+    background-color: #22253D;
+  }
+  .accordion.active .url {
+    display: block;
+  }
+
+  .btn-primary{
+    background-color: #3f425e!important;
+    border: 1px solid #3f425e!important;
+    color: #3f425e!important;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn{
+    margin-top: 30px;
+    width: 100%;
+    line-height: 2.5;
+}
+
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: rgb(104, 102, 102);
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+select {
+  /* Reset */
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  /* Personalize */
+  width: 20em;
+  height: 3em;
+  padding: 0 4em 0 1em;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+      no-repeat right 0.8em center / 1.4em,
+    linear-gradient(to left, $glass-icon 3em, $glass 3em);
+  color: white;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  /* <option> colors */
+  option {
+    color: inherit;
+    background-color: $option;
+  }
+  /* Remove focus outline */
+  &:focus {
+    outline: none;
+  }
+  /* Remove IE arrow */
+  &::-ms-expand {
+    display: none;
+  }
+}
