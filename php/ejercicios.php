@@ -33,35 +33,21 @@ $extraer = $ejecutar->fetch_assoc();
 
 <!--Sección de menu-->
 <nav class="navbar navbar-expand-md p-0">
-        <div class="container-fluid mx-3 ">
-                <a class="navbar-brand" href="../index.html">
-                    <img  alt="logo-StayFitness" src="../img/logostayfitnessblanco.png">    
-                </a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav align-content-center">
-                    <li class="nav-item link-li">
-                        <a class="nav-link link-a fs-5" href="../index.html">INICIO</a>
-                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="usuario.php">USUARIOS</a></li>
-                    <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
-                    <li class="nav-item link-li" id="w"><a class="nav-link link-a fs-5" href="#">BIENVENIDO <?php 
-                              echo $nombre?></a></li>
-
   <div class="container-fluid mx-3 ">
     <a class="navbar-brand" href="../index.html">
-      <img src="../img/logostayfitnessblanco.png">    
+      <img  alt="logo-StayFitness" src="../img/logostayfitnessblanco.png">    
     </a>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav align-content-center">
-      <li class="nav-item link-li">
+        <li class="nav-item link-li">
         <a class="nav-link link-a fs-5" href="../index.html">INICIO</a>
         <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="usuario.php">USUARIOS</a></li>
         <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
         <li class="nav-item link-li" id="w">
           <a class="nav-link link-a fs-5" href="#">BIENVENIDO <?php 
-          echo $nombre?>
+            echo $nombre?>
           </a>
         </li>
-                    
       </ul>
 
     </div>
