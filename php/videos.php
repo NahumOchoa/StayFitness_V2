@@ -7,10 +7,10 @@
 	$url = $_POST['url'];
 
 
-    echo $categoria;
+    /*echo $categoria;
     echo $subcategoria;
     echo $url;
-
+    */
     switch ($subcategoria) {
         case 'Aumento de masa corporal':
             $categoria = 'gain-weight';
@@ -32,7 +32,7 @@
             $subcategoria = 'flex';
             break;
     }
-    echo '</br>'.$categoria.'</br>'.$subcategoria;
+    //echo '</br>'.$categoria.'</br>'.$subcategoria;
 
     preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user|shorts)\/))([^\?&\"'>]+)/", $url, $matches);
     $videoId = $matches[1];
@@ -46,28 +46,30 @@
     	</script>
 		 
 		 "; 
-    }
-
-    $nombreVideo= 'Subir-'.$videoId;
-
-    $result= mysqli_query($link, "INSERT INTO `videos`(`nombre`, `url`, `categoria`, `subcategoria`) VALUES('$nombreVideo', '$videoId', '$categoria', '$subcategoria')");
-    if (mysqli_error($result)) {
-        echo "
-            <script>
-                alert('Ha ocurrido un error');
-                location.href='../php/nuevoVideo.php';
-            </script>
-             
-             "; 
     }else {
-        echo "
-            <script>
-                alert('Registro Exitoso');
-                location.href='../php/ejercicios.php';
-            </script>
-             
-             "; 
+        $nombreVideo= 'Subir-'.$videoId;
+
+        $result= mysqli_query($link, "INSERT INTO `videos`(`nombre`, `url`, `categoria`, `subcategoria`) VALUES('$nombreVideo', '$videoId', '$categoria', '$subcategoria')");
+        if (mysqli_error($result)) {
+            echo "
+                <script>
+                    alert('Ha ocurrido un error');
+                    location.href='../php/nuevoVideo.php';
+                </script>
+                
+                "; 
+        }else {
+            echo "
+                <script>
+                    alert('Registro Exitoso');
+                    location.href='../php/ejercicios.php';
+                </script>
+                
+                "; 
+        }
     }
+
+    
     /*
     if ($stmt = $link->prepare("INSERT INTO `videos`(`nombre`, `url`, `categoria`, `subcategoria`) VALUES (?, ?, ?, ?)")){
         $stmt->bind_param("sssd", $nombreVideo, $videoId, $categoria, $subcategoria);
