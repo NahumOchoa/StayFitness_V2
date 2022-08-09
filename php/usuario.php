@@ -46,6 +46,7 @@ $extraer = $ejecutar->fetch_assoc();
                         <a class="nav-link link-a fs-5" href="../index.html">INICIO</a>
                     <li class="nav-item link-li">
                       <a class="nav-link link-a fs-5" href="ejercicios.php">EJERCICIOS</a></li>
+                      <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="../ayuda.html">AYUDA</a></li>
                     <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
                     <li class="nav-item link-li" id="w"><a class="nav-link link-a fs-5" href="#">BIENVENIDO <?php 
                               echo $nombre?></a></li>
