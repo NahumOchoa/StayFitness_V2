@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include "conectar.php";
+include "conexion-metricas.php";
 
 $nombre = $_SESSION['nombre'];
 if(!isset($nombre)){

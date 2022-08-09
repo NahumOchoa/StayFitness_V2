@@ -29,7 +29,32 @@ if ($stmt = $link->prepare("INSERT INTO registros (email, contraseña, nombre, e
     	</script>
 		 
 		 "; 
-    }
+    }elseif($stmt->error == "Duplicate entry '$email' for key 'email'"){
+		echo "
+		<script>
+            alert('Error al registrar, el email: $email ya existe');
+            location.href='../registro.html';
+    	</script>
+		 
+		 ";
+		
+	}elseif($stmt->error == "Duplicate entry '$nombre' for key 'nombre'"){
+		echo "
+		<script>
+			alert('Error al registrar, el nombre: $nombre ya existe');
+			location.href='../registro.html';
+		</script>
+		 
+		 ";
+	}elseif($stmt->error){
+		echo "
+		<script>
+			alert('Error al registrar usuario y email ya existen en la base de datos'); 
+			location.href='../registro.html';
+		</script>
+		 
+		 ";
+	}
 }
 
 ?>
