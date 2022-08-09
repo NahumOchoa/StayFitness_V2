@@ -8,7 +8,7 @@
 }
 
 .banner {
-    background-color: #0c1c34  ;
+    background-color: #070E27  ;
     margin-top: 70px;
     color: #ffffff;
 }
@@ -37,7 +37,7 @@
 
 /*Menu*/
 nav {
-    background-color: #0c1c34;
+    background-color: #070E27!important;
     position: absolute;
 }
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {

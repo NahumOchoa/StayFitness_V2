@@ -26,7 +26,7 @@ mysqli_select_db($link,"bd_fitness") or die(header ("Location: ../error.html"));
    
         echo "
 		<script>
-            alert('Eliminacion Exitosa $prueba[0], $nombre');
+            alert('Eliminacion Exitosa');
             location.href='usuario.php';
     	      </script>
 		 

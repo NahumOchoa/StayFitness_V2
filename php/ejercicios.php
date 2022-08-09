@@ -1,12 +1,13 @@
 <?php
 
 session_start();
-include "conectar.php";
+include "conexion-videos.php";
 
 $nombre = $_SESSION['nombre'];
 if(!isset($nombre)){
   header("location:../nuevo-iniciar-sesion.html");
 }
+
  //extraer los datos del usuario que se tiene dentro de la variable sesion
 $consulta = "SELECT * FROM registros WHERE nombre = '$nombre'";
 $ejecutar = $link->query($consulta);
@@ -86,7 +87,7 @@ $extraer = $ejecutar->fetch_assoc();
     <?php 
         if (strcmp($nombre, "admin") == 0 ) {     
           
-          echo '<a type="button" name="add" class="btn btn-primary" href="../php/nuevoVideo.php"> Agregar Video</a>';
+          echo '<a type="button" name="add" class="btn btn-primary" href="../php/nuevoVideo.php"> AGREGAR VIDEO</a>';
         }
         ?>
     <div class="accordion categoria">    
@@ -104,9 +105,7 @@ $extraer = $ejecutar->fetch_assoc();
           $sql= "SELECT * FROM `videos` WHERE `subcategoria`= 'increase-b-mass' ORDER BY `id`";
           $result = mysqli_query($link, $sql);
 
-          if(!$result){
-            header("Location: ../error.html");
-          }          
+               
 
           // Display the number of records found, this is for testing, if you're not testing please toggle line comment 
           //echo '<p>The query found ' . mysqli_num_rows($result) . ' rows</p>';

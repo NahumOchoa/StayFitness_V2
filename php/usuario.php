@@ -190,7 +190,7 @@ $extraer = $ejecutar->fetch_assoc();
   
   <div class="d-flex flex-column align-items-center">
     <div class="d-flex flex-column align-items-center">
-      <form align="center " class ="form-imc-delete"action="imc-delete.php" method="POST" >
+      <form align="center " id="tabla-imc" class ="form-imc-delete"action="imc-delete.php" method="POST" >
         <table align="center"  class= "table-progreso"id="progreso">
           <h2 align ="center">Tabla de progreso</h2>
           
@@ -223,12 +223,32 @@ $extraer = $ejecutar->fetch_assoc();
           ?>
           
           </table>
-          <input align="center" type="submit" type="button" class="btn btn-primary"  value="Eliminar Metricas" >
+          <input align="center"  type="button" class="btn btn-primary" onclick="verificar();" value="Eliminar Metricas" >
 
         </form>
       </div>
   </div>
-    
+  <script>
+    function verificar(){
+        var suma = 0;
+        var los_cboxes = document.getElementsByName('eliminar[]'); 
+        for (var i = 0, j = los_cboxes.length; i < j; i++) {
+            
+            if(los_cboxes[i].checked == true){
+            suma++;
+            break
+            }
+        }
+        
+        if(suma == 0){
+          alert('Debe seleccionar una casilla');
+        return false;
+        }else{
+          let form = document.querySelector('#tabla-imc');
+          form.submit();
+        }
+    }
+  </script>
   </section>
 
     

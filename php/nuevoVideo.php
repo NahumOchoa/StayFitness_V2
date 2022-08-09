@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include "conectar.php";
+include "conexion-videos.php";
 
 $nombre = $_SESSION['nombre'];
 if(!isset($nombre)){
@@ -15,6 +15,8 @@ if (strcmp($nombre, "admin") != 0 ) {
 $consulta = "SELECT * FROM registros WHERE nombre = '$nombre'";
 $ejecutar = $link->query($consulta);
 $extraer = $ejecutar->fetch_assoc();
+
+          
 ?>
 <!DOCTYPE html>
 <html lang="en">
