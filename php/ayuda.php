@@ -20,8 +20,9 @@ $extraer = $ejecutar->fetch_assoc();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--estilos-->
-    <link rel="stylesheet" href="../css/style-usuario.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/preguntas.css">
+   
     <title>StayFitness</title>
 </head>
 
@@ -31,7 +32,7 @@ $extraer = $ejecutar->fetch_assoc();
   <nav>
     <img src="../img/logostayfitnessblanco.png">
     <ul id="menu">
-      <li><a href="usuario.php">HOME</a></li>
+      <li><a href="usuario.php">INICIO</a></li>
       <li><a href="ejercicios.php">EJERCICIOS</a></li>
       <li><a href="cerrar-sesion.php">CERRAR SESIÓN</a></li>
       <li id="w" href="">BIENVENIDO <?php 

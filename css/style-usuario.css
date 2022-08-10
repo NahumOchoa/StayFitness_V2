@@ -1,17 +1,20 @@
-* {font-family: Century Gothic, sans-serif;}
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,500;1,600&display=swap');
+* {font-family: 'Open Sans', sans-serif;}
+*{color:white;}
 body {
-    text-align: justify;
+    background-color: #070E27!important;
 }
 
 
 /*Banner*/
 .banner {
-    display:inline-flex;
-    background-image: url(../img/disco.jpg);
-    margin-top: 65px;
-    width: 101%;
-    margin-left: -10px;
+    background-color: #070E27!important;
+    height: 40vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner div{
@@ -26,7 +29,17 @@ body {
 .banner input:hover{
     width: 40px;
 }
-
+nav li a:hover{
+    color: #9b83f8!important;
+    border-bottom:  1px white solid;
+    border-radius: 4px;
+    padding: 5px;
+}
+.error{
+    color: red!important;
+    margin-top: 10px;
+    font-size: 10px;
+}	
 .nombre {
     margin-left: 3%;
     color: #ffffff;
@@ -45,48 +58,35 @@ body {
 
 /*Menu*/
 nav {
-    background-color: #0c1c34 ;
-    ;
-    padding: 3px;
-    position: absolute;
-    width: 100%;
-    margin-top: -9px;
-    margin-left: -10px;
+    background-color: #22253D;
 }
 
 nav img{
-    float: left;
-    width: 7%;
-    margin-left: 3%;
+    
+    width: 60%;
+   
 }
-
+#resultado{
+    color:black;
+}
+nav a{
+    color: white;
+}
 .redes {
     list-style: none;
     margin-left: 10%;
 }
-
+#ejercicio-footer{
+    margin-top: 250px;
+}
 ul{
     list-style: none;
-  }
-  #menu li>a{
-    color: #ffffff;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    min-width: 100px;
-    font-size: 18px;
-    margin-left: 30px;
   }
 
   #w{
     color: #ffffff;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    min-width: 100px;
-    font-size: 18px;
-    margin-left: 450px;
-    font-weight: bold;
+    margin-left: 550px;
+    
   }
 
   #menu li>a:hover{
@@ -109,9 +109,112 @@ ul{
 
 /* Contenido*/
 body{
-    background-color: rgb(255, 255, 255);;
+    background-color: #3f425e;
+}
+#container-imc{
+    background-color: #22253D!important;
+    border: 1px solid #6F4EF6!important;
+}
+#container-imc p{
+    text-align: left!important;
+    margin-top: 10px;
+
+}
+#guardar2{
+    width: 170px!important;
+    cursor: pointer;
+    border: none;
+    outline: none!important;
+    padding: 10px!important;
+    border-radius: 5px!important;
+    color: white;
+    background-color: #768dd8;
+}
+#saveButton{
+    background-color: #6F4EF6!important;
+    border: 1px solid #6F4EF6!important;
+    color: white!important;
+    font-size: 15px!important;
+    padding: 10px!important;
+    margin-top: 10px!important;
+    margin-left: 10px!important;
+}
+#saveButton:hover{
+    background-color: #ffffff!important;
+    color: #6F4EF6!important;
+}
+.combo{
+    color: black !important;
 }
 
+.combo option{
+    color: black !important;
+}
+.day {
+    color: black !important;
+    font-size: 13px;
+    margin-left: 10px;
+}
+.day:hover{
+    color: #6F4EF6!important;
+}
+#cancelButton{
+    background-color: red!important;
+    border: 1px solid red!important;
+    color: white!important;
+    font-size: 15px!important;
+    padding: 10px!important;
+    margin-top: 10px!important;
+    margin-left: 10px!important;
+}
+#cancelButton:hover{
+    background-color: #ffffff!important;
+    color: red!important;
+}
+#closeButton{
+    background-color: #6F4EF6!important;
+    border: 1px solid #6F4EF6!important;
+    color: white!important;
+    align-items: center;
+    font-size: 15px!important;
+    padding: 10px!important;
+    margin-top: 10px!important;
+    margin-left: 10px!important;
+}
+#closeButton:hover{
+    background-color: #ffffff!important;
+    color: #6F4EF6!important;
+}
+#deleteButton{
+    background-color: red!important;
+    border: 1px solid red!important;
+    align-items: center;
+    color: white!important;
+    font-size: 15px!important;
+    padding: 10px!important;
+    margin-top: 10px!important;
+    margin-left: 10px!important;
+}
+#deleteButton:hover{
+    background-color: #ffffff!important;
+    color: red!important;
+}
+.btn-primary{
+    background-color: #3f425e!important;
+    border: 1px solid #6F4EF6!important;
+    color: white!important;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.btn-primary:hover{
+    background-color: #6F4EF6!important;
+    border: 1px solid #6F4EF6!important;
+   
+    color: white!important;
+    font-weight: bold;
+    
+}
 article{
     width: 80%;
     margin: 0 auto;
@@ -153,7 +256,9 @@ article p{
     margin-left: 50px;
     width: 200px;
 }
-
+.jala input{
+    color: black!important;
+}
 .iconos2 img{
     width: 100px;
     margin-top: 11%;
@@ -167,7 +272,21 @@ article p{
 .iconos, .iconos2 h4{
     font-size: 18px;
 }
+#container{
+    background-color: #22253D!important;
+    border: 1px solid #6F4EF6!important;
+    
+}
+.table-progreso{
+    background-color: #22253D!important;
+    border: 1px solid #6F4EF6!important;
 
+}
+.table-progreso caption{
+    background-color: #22253D!important;
+    border: 1px solid #6F4EF6!important;
+
+}
 .image {
     margin-top: 10%;
     position:relative;
@@ -247,52 +366,37 @@ article p{
 
 /* Pie de pagina*/
 footer{
-    background-color: #0c1c34;
+    background-color: #22253D;
     padding: 2%;
     margin-top: 30px;
     
 }
 
-footer img{
-    float: left;
-    width: 5%;
-}
-
-footer h3{
-    margin-top: -1%;
-    margin-left: 30%;
-    color: #ffffff;
-    display: inline-block;
-}
-
-footer h3 .ayuda{
-    margin-top: -1%;
-    text-align: left;
-    margin-left: 20%;
-    color: #ffffff;
-    display: inline-block;
-}
-
-.redes{
-    text-align: right;
-    margin-right: 19%;
-}
-.redes li{
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.redes li img{
+.combo2{
+    padding: 10px;
     width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    color: black!important;
 }
-
+footer a{
+    color: #ffffff!important;
+    text-decoration: none!important;
+}
+.form-imc-delete{
+    
+    width: 180%;
+}
 table {
     background-color: #b0b8e8;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 10px 10px 15px 10px;
     width: 61%;
-    margin-left: 248px;
+    
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }

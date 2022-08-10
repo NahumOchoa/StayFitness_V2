@@ -7,32 +7,44 @@
     <!--estilos-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style-ayuda.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/preguntas.css">
+    <link rel="shortcut icon" href="img/logostayfitnessblanco.png" type="image/x-icon">
     <title>StayFitness</title>
 </head>
 
 <body>
 
+
 <!--Sección de menu-->
-    <nav>
-        <img src="img/logostayfitnessblanco.png">
-        <ul class="menu">
-            <li><a href="index.html">HOME</a></li>
-            <a href="iniciar-sesion.html"><input type="image" src="img/icon/usuario1.png" value="boton"></a>
-        </ul>
-    </nav>    
+<nav class="navbar navbar-expand-md fixed-top p-0">
+  <div class="container-fluid mx-3">
+          <a class="navbar-brand" href="index.html">
+              <img alt="logo-StayFitness" src="img/logostayfitnessblanco.png">    
+          </a>
+      <div class="collapse navbar-collapse">
+          <ul class="navbar-nav align-content-center">
+              <li class="nav-item link-li"><a class="nav-link link-a fs-5" href="javascript:history.back(-1);">VOLVER ATRAS</a></li>   
+          </ul>
+      </div>
+      
+  </div>
+</nav>    
 
 <!--Banner con datos de sitio-->
-    <header class="banner">
-        <img src="img/inicio.png" alt="inicio" class="inicio">
-        <div class="nombre">
-            <h1>STAYFITNESS</h1>
-            <p class="descripcion">Acepta los retos para así sentir la autoría de la victoria</p>
-            <a href="iniciar-sesion.html"><input type="image" src="img/icon/flecha1.png" value="boton"></a>
-        </div>    
-    </header>
-
+<header class="banner container-fluid justify-content-center">
+  <div class="row align-items-center">
+      <div class="col-lg-5 d-flex justify-content-center">
+          <img class="img-fluid" src="img/index2.png" alt="about-us-img">
+      </div>
+      <div class="col-lg-7 text px-3">
+          <h1>STAYFITNESS</h1>
+          <p>Acepta los retos para así sentir la autoría de la victoria</p>
+      </div>
+  </div>
+ 
+</header>
 
 <!--Contenido de Desarrollo de Pagina-->
 <!--Seccion de preguntas frecuentes-->
@@ -210,14 +222,21 @@
 </script>
 
 <!--Sección de pie de página-->
-    <footer id="contacto">
-        <img src="img/logostayfitnessblanco.png">
-        <a href="ayuda.html"><h3 class="ayuda">AYUDA</h3></a>
-        <h3>REDES SOCIALES</h3>
-        <ul class="redes">
-            <li><a href="https://www.instagram.com/stayfitness4/?hl=es-la" target="_blank"><img src="img/redes-sociales/instagram.png" alt=""></a></li>
-            <li><a href="https://vm.tiktok.com/ZTdU2C36b/" target="_blank"><img src="img/redes-sociales/tiktok.png" alt=""></a></li>
-        </ul>
-    </footer>
+<footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+  <p class="fs-5 px-3  pt-3">STAYFITNESS. &copy; Todos Los Derechos Reservados 2022</p>
+  
+  <a href="#"><i class="bi bi-instagram"></i></a>  
+  
+</footer>
+<script>
+  $(function() {
+          $(document).on('keydown', 'body', function(event) {
+              if(event.keyCode==112){ //F1
+                  event.preventDefault();
+                  window.location.href = "Manual de Usuario StayFitness.pdf";
+              }
+          });
+      });
+</script>
 </body>
 </html>

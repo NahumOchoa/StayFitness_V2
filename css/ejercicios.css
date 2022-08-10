@@ -7,7 +7,7 @@
     padding: 10px;
     margin-top: 15px;
     margin-bottom: 10px;
-    background: #b0b8e8 ;
+    background: #070E27;
     border-radius: 10px;
   }
 
@@ -30,6 +30,7 @@
     border-radius: 10px;
     margin-top: 10px;
   }
+  
 
   .url h3{
     text-align: center;
@@ -37,94 +38,72 @@
 
   .accordion:hover {
     cursor: pointer;
+    background-color: #22253D;
   }
 
   .url {
     display: none;
   }
-
+  .accordion.active {
+    background-color: #22253D;
+  }
   .accordion.active .url {
     display: block;
   }
 
-/* Pie de pagina*/
-footer{
-    background-color: #0c1c34;
-    padding: 2%;
+  .btn-primary{
+    background-color: #3f425e!important;
+    border: 1px solid #3f425e!important;
+    color: white!important;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn{
     margin-top: 30px;
     width: 100%;
-    
+    line-height: 2.5;
 }
 
-footer img{
-    float: left;
-    width: 5%;
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
 }
-
-footer h3{
-    margin-top: -1%;
-    margin-left: 30%;
-    color: #ffffff;
-    display: inline-block;
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
 }
-
-footer h3 .ayuda{
-    margin-top: -1%;
-    text-align: left;
-    margin-left: 20%;
-    color: #ffffff;
-    display: inline-block;
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
 }
-
-.redes{
-    text-align: right;
-    margin-right: 19%;
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: .25s all ease;
+  pointer-events: none;
 }
-.redes li{
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.redes li img{
-    width: 100%;
-}
-
-/* Pie de pagina*/
-footer{
-    background-color: #0c1c34;
-    padding: 2%;
-    margin-top: 30px;    
-}
-
-footer img{
-    float: left;
-    width: 5%;
-}
-
-footer h3{
-    margin-top: -1%;
-    margin-left: 30%;
-    color: #ffffff;
-    display: inline-block;
-}
-
-footer h3 .ayuda{
-    margin-top: -1%;
-    text-align: left;
-    margin-left: 20%;
-    color: #ffffff;
-    display: inline-block;
-}
-
-.redes{
-    text-align: right;
-    margin-right: 19%;
-}
-.redes li{
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.redes li img{
-    width: 100%;
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
 }

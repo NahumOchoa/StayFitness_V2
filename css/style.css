@@ -1,9 +1,5 @@
-* {font-family: Century Gothic, sans-serif;}
-
-body {
-    text-align: justify;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,500;1,600&display=swap');
+* {font-family: 'Open Sans', sans-serif;}
 
 /*Banner*/
 .inicio {
@@ -12,16 +8,9 @@ body {
 }
 
 .banner {
-    display:inline-flex;
-    background-color: #0c1c34  ;
-    margin-top: 65px;
-    width: 102%;
-    padding: 3px;
-    margin-left: -10px;
-}
-
-.banner div{
-    margin-left: 100px;
+    background-color: #070E27  ;
+    margin-top: 70px;
+    color: #ffffff;
 }
 
 .banner input{
@@ -48,20 +37,27 @@ body {
 
 /*Menu*/
 nav {
-    background-color: #0c1c34  ;
-    padding: 3px;
+    background-color: #070E27!important;
     position: absolute;
-    width: 100%;
-    margin-top: -9px;
-    margin-left: -10px;
 }
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #8064A2 !important;
+}
+.btn-black{background-color:#5B42E3;color: #FFF}
+.btn-black:hover{background-color: #cf54fc; color: #fff}
+.btn-outline-info{border-color: white; color: white}
+.btn-outline-info:hover{border-color: rgb(206, 206, 206);color: rgb(206, 206, 206); background-color: transparent}
 
 nav img{
-    float: left;
-    width: 7%;
-    margin-left: 3%;
+    width: 60%;
+}
+#btns{
+    margin-left: 10px;
 }
 
+#btns2{
+    margin-left: 10px;
+}
 .menu, .redes {
     list-style: none;
     margin-left: 10%;
@@ -74,20 +70,29 @@ nav img{
     margin-left: 30px;
 }
 
-.menu li a {
+.menu li a, .link-a {
     text-decoration: none;
     color: #ffffff;
     display: block;
     font-size: 18px;
 }
 
-.menu li a:hover {
+.link-li :hover {
     color: #ccf4fc ;
 }
 
-.menu input{
-    float: right;
-    margin-right: 5%;
+.login-icon {
+    font-size: 30px;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.login-link:hover {
+    color: #ccf4fc;
 }
 
 .menu input:hover{
@@ -196,44 +201,6 @@ article p{
 .image a:hover{
     background-color: #0c1c34;
 }
-
-#about{
-    padding: 5% 5% 5% 5%;
-    margin-top: 10%;
-    background-color: #b0b8e8 ;
-    border-radius: 20px;
-    background-size: 100%;
-}
-#about p{
-    margin-right: 20%;
-}
-
-#about img{
-    float: right;
-    width: 140px;
-    height: 180px;
-    margin-right: 5px;
-    margin-top: -20%;
-}
-
-#ejercicios{
-    margin-top: 10%;
-    padding: 5% 0 5% 0;
-    background-color: #b0b8e8  ;
-    border-radius: 20px;
-    background-size: 100%;
-}
-
-#ejercicios img{
-    width: 300px;
-    height: 150px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display:block;
-    margin:auto;
-    border-radius: 5px;
-
-}
 .ejer h2{
     text-align: center;
     font-size: 18px;
@@ -250,7 +217,7 @@ article p{
 
 /* Pie de pagina*/
 footer{
-    background-color: #0c1c34  ;
+    background-color:  #070E27!important  ;
     padding: 2%;
     margin-top: 50px;
     
@@ -275,7 +242,16 @@ footer h3 .ayuda{
     color: #ffffff;
     display: inline-block;
 }
+footer p, a{
+    color: white;
 
+}
+nav li a:hover{
+    color: #9b83f8!important;
+    border-bottom:  1px white solid;
+    border-radius: 4px;
+    padding: 5px;
+}
 .redes{
     text-align: right;
     margin-right: 19%;
@@ -289,3 +265,19 @@ footer h3 .ayuda{
     width: 100%;
 }
 
+@media (max-width: 992px) {
+    .text {
+        text-align: center;
+    }
+
+    .img-ejercicio {
+        width: 50%;
+        height: auto;
+    }
+
+    .img-fluid {
+        max-width: 80%;
+        height: auto;
+        margin: auto;
+    }
+}

@@ -1,0 +1,89 @@
+$glass: rgba(255, 255, 255, 0.2);
+$glass-icon: rgba(255, 255, 255, 0.3);
+$gradient: linear-gradient(35deg, rgb(0, 255, 55), rgb(19, 0, 128));
+$option: #233286;
+
+.layout {
+    width: 610px;
+    margin: auto;
+  }
+
+  .accordion {
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background: #070E27;
+    border-radius: 10px;
+  }
+  #justificar p {
+    margin-top: 10px;
+    margin-bottom: 10px!important;
+  }
+  .categoria p {
+    font-weight: bold;
+    margin: 5px;
+    padding: 0;
+    font-family: Century Gothic, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .url p {
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    font-family: Century Gothic, sans-serif;
+    color: rgb(0, 0, 0);
+    background: #63599c  ;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+
+  .url h3{
+    text-align: center;
+  }
+
+  .accordion:hover {
+    cursor: pointer;
+    background-color: #22253D;
+  }
+
+  .url {
+    display: none;
+  }
+  .accordion.active {
+    background-color: #22253D;
+  }
+  .accordion.active .url {
+    display: block;
+  }
+
+  .btn-primary{
+    background-color: #3f425e!important;
+    border: 1px solid #3f425e!important;
+    color: #3f425e!important;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn{
+    margin-top: 30px;
+    width: 100%;
+    line-height: 2.5;
+}
+.form-select{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    color: rgb(0, 0, 0)!important;
+    margin-top: 10px;
+}
+.form-select option{
+    color: rgb(0, 0, 0)!important;
+}
+    
+
+
+
+
