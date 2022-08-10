@@ -33,7 +33,7 @@ require_once 'inc/dbconnection.php' ;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contraseña Olvidada | StayFitness</title>
     <!--estilos-->
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style-iniciar-sesion.css">
@@ -82,5 +82,14 @@ require_once 'inc/dbconnection.php' ;
     </div>
     <script src="./js/check.js"></script>
   </section>
-
+  <script>
+        $(function() {
+                $(document).on('keydown', 'body', function(event) {
+                    if(event.keyCode==112){ //F1
+                        event.preventDefault();
+                        window.location.href = "Manual de Usuario StayFitness.pdf";
+                    }
+                });
+            });
+      </script>
 </body>

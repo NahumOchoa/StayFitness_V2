@@ -73,6 +73,16 @@
   });
    
   </script>
+  <script>
+    $(function() {
+            $(document).on('keydown', 'body', function(event) {
+                if(event.keyCode==112){ //F1
+                    event.preventDefault();
+                    window.location.href = "Manual de Usuario StayFitness.pdf";
+                }
+            });
+        });
+  </script>
 
 </body>
 </html>

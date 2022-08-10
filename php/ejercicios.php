@@ -26,6 +26,7 @@ $extraer = $ejecutar->fetch_assoc();
     <link rel="stylesheet" href="../css/ejercicios.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
     <link rel="shortcut icon" href="../img/logostayfitnessblanco.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="" href="iniciar-sesion.php">
     <title>Ejercicios | StayFitness</title>
 </head>
@@ -394,6 +395,15 @@ $extraer = $ejecutar->fetch_assoc();
         <a href="#"><i class="bi bi-instagram"></i></a>  
     </footer>
 
-
+    <script>
+        $(function() {
+                $(document).on('keydown', 'body', function(event) {
+                    if(event.keyCode==112){ //F1
+                        event.preventDefault();
+                        window.location.href = "../Manual de Usuario StayFitness.pdf";
+                    }
+                });
+            });
+      </script>
 </body>
 </html>

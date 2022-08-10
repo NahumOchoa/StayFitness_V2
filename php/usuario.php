@@ -259,6 +259,15 @@ $extraer = $ejecutar->fetch_assoc();
         <p class="fs-5 px-3  pt-3">STAYFITNESS. &copy; Todos Los Derechos Reservados 2022</p>
         <a href="#"><i class="bi bi-instagram"></i></a>  
     </footer>
-    
+    <script>
+        $(function() {
+                $(document).on('keydown', 'body', function(event) {
+                    if(event.keyCode==112){ //F1
+                        event.preventDefault();
+                        window.location.href = "../Manual de Usuario StayFitness.pdf";
+                    }
+                });
+            });
+      </script>
 </body>
 </html>
